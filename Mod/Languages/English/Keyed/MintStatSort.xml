@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MSS.Enabled>Enable the statistics selector in Nice Bill Tab and Dubs Mint Menus</MSS.Enabled>
+  <MSS.SettingsInfo>Choose a category, statistic and direction in the workbench recipe list. Values use Normal quality and the selected reference material.</MSS.SettingsInfo>
+  <MSS.Reset>Reset category, sorting and material</MSS.Reset>
+  <MSS.Original>Original order</MSS.Original>
+  <MSS.Name>Name</MSS.Name>
+  <MSS.Work>Recipe work amount</MSS.Work>
+  <MSS.ShotDamage>Damage per projectile</MSS.ShotDamage>
+  <MSS.Range>Weapon range</MSS.Range>
+  <MSS.Burst>Projectiles per burst</MSS.Burst>
+  <MSS.Penetration>Projectile armor penetration</MSS.Penetration>
+  <MSS.RangedDps>Theoretical ranged DPS</MSS.RangedDps>
+  <MSS.OtherStats>Other statistics</MSS.OtherStats>
+  <MSS.Common>Common</MSS.Common>
+  <MSS.NoData>—</MSS.NoData>
+  <MSS.NoDataTip>This recipe exposes no comparable value for the selected statistic. It goes last in both directions.</MSS.NoDataTip>
+  <MSS.IncompatibleMaterial>The selected material is not allowed for this product or recipe.</MSS.IncompatibleMaterial>
+  <MSS.NoMaterial>No allowed reference material was found.</MSS.NoMaterial>
+  <MSS.MultiProduct>This recipe has no single fixed product to compare.</MSS.MultiProduct>
+  <MSS.ReferenceDetail>Reference: Normal quality. Material: {0}.</MSS.ReferenceDetail>
+  <MSS.NotApplicable>Not applicable</MSS.NotApplicable>
+  <MSS.WeaponReference>Reference for the first ranged attack with a defined projectile. Excludes accuracy, secondary effects, shooter skill and other attacks. DPS is theoretical.</MSS.WeaponReference>
+  <MSS.StatUnavailable>The statistics system could not calculate this value.</MSS.StatUnavailable>
+  <MSS.All>All</MSS.All>
+  <MSS.Apparel>Armor and apparel</MSS.Apparel>
+  <MSS.Ranged>Ranged weapons</MSS.Ranged>
+  <MSS.Melee>Melee weapons</MSS.Melee>
+  <MSS.Other>Other products and recipes</MSS.Other>
+  <MSS.CategoryButton>Category: {0}</MSS.CategoryButton>
+  <MSS.SortButton>Sort: {0}</MSS.SortButton>
+  <MSS.CompareTip>Compares each recipe's single product at Normal quality. Recipes without a value go last. A higher value does not mean an item is better in every respect.</MSS.CompareTip>
+  <MSS.Descending>Highest to lowest</MSS.Descending>
+  <MSS.Ascending>Lowest to highest</MSS.Ascending>
+  <MSS.DefaultMaterial>Each product's default</MSS.DefaultMaterial>
+  <MSS.MaterialButton>Normal · Material: {0}</MSS.MaterialButton>
+  <MSS.MaterialTip>Material affects only products made from stuff. Products incompatible with a selected material have no value. This does not change bills or ingredient restrictions.</MSS.MaterialTip>
+  <MSS.ResetShort>Clear</MSS.ResetShort>
+  <MSS.ChooseStat>Sort by… Type to search for a statistic</MSS.ChooseStat>
+  <MSS.Connected>Dubs Mint Menus integration connected.</MSS.Connected>
+  <MSS.ConnectedMenu>Integration connected: {0}.</MSS.ConnectedMenu>
+  <MSS.NoMenu>Enable Nice Bill Tab or Dubs Mint Menus and restart RimWorld.</MSS.NoMenu>
+  <MSS.NiceFlatTip>In Nice Bill Tab, sorting or filtering with this selector temporarily uses compact cards instead of the category tree. Reset restores the tree. Comparison values use the material selected here and may differ from the right-hand panel.</MSS.NiceFlatTip>
+  <MSS.GoalsTitle>What are you looking for?</MSS.GoalsTitle>
+  <MSS.ChooseGoals>Characteristics…</MSS.ChooseGoals>
+  <MSS.Characteristics>Characteristics</MSS.Characteristics>
+  <MSS.GoalsHelp>Tick several boxes. Choose More or Less for each, then press Apply.</MSS.GoalsHelp>
+  <MSS.Recommended>Recommended</MSS.Recommended>
+  <MSS.AllStats>Show all</MSS.AllStats>
+  <MSS.More>More ↑</MSS.More>
+  <MSS.Less>Less ↓</MSS.Less>
+  <MSS.CriteriaCount>{0} characteristics</MSS.CriteriaCount>
+  <MSS.SelectedCount>Selected: {0}</MSS.SelectedCount>
+  <MSS.BalanceShort>Each is equally important.</MSS.BalanceShort>
+  <MSS.BalanceTip>With several boxes ticked, the score favors items that balance all goals. It compares visible recipes; it is not damage or an armor percentage. Items missing a chosen value go last.</MSS.BalanceTip>
+  <MSS.ScoreValue>{0} pts</MSS.ScoreValue>
+  <MSS.BestFirst>Best combination first</MSS.BestFirst>
+  <MSS.WorstFirst>Reverse: worst combination first</MSS.WorstFirst>
+  <MSS.Apply>Apply</MSS.Apply>
+  <MSS.ClearSelection>Clear selection</MSS.ClearSelection>
+  <MSS.NoCharacteristics>No comparable characteristics. Try another category or press Show all.</MSS.NoCharacteristics>
+  <MSS.NameHelp>Sort recipes by name. The toolbar arrow reverses the order.</MSS.NameHelp>
+  <MSS.OriginalHelp>Keep the menu's own order without comparing characteristics.</MSS.OriginalHelp>
+  <MSS.Group.attack>Damage and weapons</MSS.Group.attack>
+  <MSS.Group.protection>Protection</MSS.Group.protection>
+  <MSS.Group.climate>Insulation and temperature</MSS.Group.climate>
+  <MSS.Group.practical>Weight, value and crafting</MSS.Group.practical>
+  <MSS.Group.other>Other characteristics</MSS.Group.other>
+  <MSS.ArmorBlunt>Blunt protection</MSS.ArmorBlunt>
+  <MSS.ArmorSharp>Sharp protection</MSS.ArmorSharp>
+  <MSS.ArmorHeat>Heat protection</MSS.ArmorHeat>
+  <MSS.Weight>Weight</MSS.Weight>
+  <MSS.MeleeDamage>Damage per hit (melee)</MSS.MeleeDamage>
+  <MSS.BluntDamage>Blunt damage (melee)</MSS.BluntDamage>
+  <MSS.SharpDamage>Sharp damage (melee)</MSS.SharpDamage>
+  <MSS.MeleeReference>Highest damage from a melee hit of the chosen type, using the reference material with no attacker. Zero means no standard attack of that type. This is not DPS and excludes secondary effects. Custom combat systems may need an adapter.</MSS.MeleeReference>
+  <MSS.CategoryTitle>What do you want to craft?</MSS.CategoryTitle>
+  <MSS.MoreCategories>Show specific categories</MSS.MoreCategories>
+  <MSS.RecipeCount>{0} recipes</MSS.RecipeCount>
+  <MSS.NoMatches>No results for this search.</MSS.NoMatches>
+  <MSS.MaterialTitle>Comparison material</MSS.MaterialTitle>
+  <MSS.StoredOnly>Stored materials only</MSS.StoredOnly>
+  <MSS.StoredCount>{0} in storage</MSS.StoredCount>
+  <MSS.AutoMaterial>Each item's default</MSS.AutoMaterial>
+  <MSS.AutoMaterialHelp>May use materials that are not in storage.</MSS.AutoMaterialHelp>
+  <MSS.NoStoredMaterials>No matching compatible materials in storage. Untick Stored materials only to see all compatible materials.</MSS.NoStoredMaterials>
+  <MSS.NoMap>No colony map is open to check storage.</MSS.NoMap>
+</LanguageData>

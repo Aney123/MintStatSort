@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Mint Stat Sort — Ordenar recetas por estadísticas</name>
+  <author>MintStatSort</author>
+  <packageId>mintstatsort.recipes</packageId>
+  <supportedVersions><li>1.6</li></supportedVersions>
+  <modDependencies>
+    <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
+  </modDependencies>
+  <loadAfter><li>brrainz.harmony</li><li>andromeda.nicebilltab</li><li>dubwise.dubsmintmenus</li><li>hicon.nicebilltabexpansion</li></loadAfter>
+  <description>Versión 0.3: selector visual con casillas para combinar varias características con igual importancia. Separa daño cortante y contundente de las protecciones de armadura. Agrupa las estadísticas y muestra primero las recomendadas. Incluye categorías visuales y materiales con iconos y cantidades almacenadas; por defecto solo muestra materiales de almacenes y estanterías del mapa actual. Compatible con Nice Bill Tab y Dubs Mint Menus. Requiere Harmony y al menos uno de esos menús. Valores de referencia con calidad Normal. Conserva las tarjetas y acciones de los menús. En la vista de árbol de Nice usa temporalmente tarjetas compactas al ordenar o filtrar. No altera recetas ni la prioridad de las órdenes. Prototipo para RimWorld 1.6.</description>
+</ModMetaData>

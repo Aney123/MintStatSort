@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MSS.Enabled>Activar el selector de estadísticas en Nice Bill Tab y Dubs Mint Menus</MSS.Enabled>
+  <MSS.SettingsInfo>Selecciona categoría, estadística y sentido del orden en la lista de recetas de la mesa. Los valores usan calidad Normal y el material indicado.</MSS.SettingsInfo>
+  <MSS.Reset>Restablecer categorías, orden y material</MSS.Reset>
+  <MSS.Original>Orden original</MSS.Original>
+  <MSS.Name>Nombre</MSS.Name>
+  <MSS.Work>Trabajo necesario para la receta</MSS.Work>
+  <MSS.ShotDamage>Daño por proyectil</MSS.ShotDamage>
+  <MSS.Range>Alcance del arma</MSS.Range>
+  <MSS.Burst>Proyectiles por ráfaga</MSS.Burst>
+  <MSS.Penetration>Penetración de armadura del proyectil</MSS.Penetration>
+  <MSS.RangedDps>DPS a distancia teórico</MSS.RangedDps>
+  <MSS.OtherStats>Otras estadísticas</MSS.OtherStats>
+  <MSS.Common>Comunes</MSS.Common>
+  <MSS.NoData>—</MSS.NoData>
+  <MSS.NoDataTip>Esta receta no expone un valor comparable para la estadística elegida. Se coloca al final en ambos sentidos.</MSS.NoDataTip>
+  <MSS.IncompatibleMaterial>El material elegido no es válido para este producto o receta.</MSS.IncompatibleMaterial>
+  <MSS.NoMaterial>No se encontró un material de referencia permitido.</MSS.NoMaterial>
+  <MSS.MultiProduct>La receta no tiene un producto único y fijo que pueda compararse.</MSS.MultiProduct>
+  <MSS.ReferenceDetail>Referencia: calidad Normal. Material: {0}.</MSS.ReferenceDetail>
+  <MSS.NotApplicable>No aplicable</MSS.NotApplicable>
+  <MSS.WeaponReference>Referencia del primer ataque a distancia con proyectil definido. No incluye precisión, efectos secundarios, habilidad del tirador ni otros ataques. El DPS es teórico.</MSS.WeaponReference>
+  <MSS.StatUnavailable>El sistema de estadísticas no pudo calcular este valor.</MSS.StatUnavailable>
+  <MSS.All>Todas</MSS.All>
+  <MSS.Apparel>Armaduras y ropa</MSS.Apparel>
+  <MSS.Ranged>Armas a distancia</MSS.Ranged>
+  <MSS.Melee>Armas cuerpo a cuerpo</MSS.Melee>
+  <MSS.Other>Otros productos y recetas</MSS.Other>
+  <MSS.CategoryButton>Categoría: {0}</MSS.CategoryButton>
+  <MSS.SortButton>Ordenar: {0}</MSS.SortButton>
+  <MSS.CompareTip>Compara el producto único de cada receta con calidad Normal. Las recetas sin dato quedan al final. Una cifra mayor no implica que un objeto sea mejor en todos los aspectos.</MSS.CompareTip>
+  <MSS.Descending>De mayor a menor</MSS.Descending>
+  <MSS.Ascending>De menor a mayor</MSS.Ascending>
+  <MSS.DefaultMaterial>Predeterminado de cada objeto</MSS.DefaultMaterial>
+  <MSS.MaterialButton>Normal · Material: {0}</MSS.MaterialButton>
+  <MSS.MaterialTip>El material solo afecta a los productos fabricados con materiales. Al elegir uno, los productos que no lo aceptan quedan sin dato. No modifica los ingredientes ni las restricciones de las órdenes.</MSS.MaterialTip>
+  <MSS.ResetShort>Limpiar</MSS.ResetShort>
+  <MSS.ChooseStat>Ordenar por… Escribe para buscar una estadística</MSS.ChooseStat>
+  <MSS.Connected>Integración de Dubs Mint Menus conectada.</MSS.Connected>
+  <MSS.ConnectedMenu>Integración conectada: {0}.</MSS.ConnectedMenu>
+  <MSS.NoMenu>Activa Nice Bill Tab o Dubs Mint Menus y reinicia RimWorld.</MSS.NoMenu>
+  <MSS.NiceFlatTip>En Nice Bill Tab, ordenar o filtrar con este selector convierte temporalmente la vista de árbol en tarjetas compactas. Restablecer recupera el árbol. Los valores de comparación usan el material indicado aquí y pueden diferir de los del panel derecho.</MSS.NiceFlatTip>
+  <MSS.GoalsTitle>¿Qué quieres encontrar?</MSS.GoalsTitle>
+  <MSS.ChooseGoals>Características…</MSS.ChooseGoals>
+  <MSS.Characteristics>Características</MSS.Characteristics>
+  <MSS.GoalsHelp>Marca varias casillas. Elige Más o Menos en cada una y pulsa Aplicar.</MSS.GoalsHelp>
+  <MSS.Recommended>Recomendadas</MSS.Recommended>
+  <MSS.AllStats>Ver todas</MSS.AllStats>
+  <MSS.More>Más ↑</MSS.More>
+  <MSS.Less>Menos ↓</MSS.Less>
+  <MSS.CriteriaCount>{0} características</MSS.CriteriaCount>
+  <MSS.SelectedCount>Seleccionadas: {0}</MSS.SelectedCount>
+  <MSS.BalanceShort>Todas tienen la misma importancia.</MSS.BalanceShort>
+  <MSS.BalanceTip>Con varias casillas, la puntuación favorece objetos equilibrados en todas. Compara las recetas visibles: no es daño ni un porcentaje de protección. Sin datos para alguna característica, el objeto queda al final.</MSS.BalanceTip>
+  <MSS.ScoreValue>{0} pts</MSS.ScoreValue>
+  <MSS.BestFirst>Mejor combinación primero</MSS.BestFirst>
+  <MSS.WorstFirst>Invertir: peor combinación primero</MSS.WorstFirst>
+  <MSS.Apply>Aplicar</MSS.Apply>
+  <MSS.ClearSelection>Desmarcar todo</MSS.ClearSelection>
+  <MSS.NoCharacteristics>No hay características comparables. Prueba otra categoría o pulsa Ver todas.</MSS.NoCharacteristics>
+  <MSS.NameHelp>Ordena las recetas por nombre. La flecha de la barra permite invertir el orden.</MSS.NameHelp>
+  <MSS.OriginalHelp>Conserva el orden del menú. No aplica una comparación por características.</MSS.OriginalHelp>
+  <MSS.Group.attack>Daño y armas</MSS.Group.attack>
+  <MSS.Group.protection>Protección</MSS.Group.protection>
+  <MSS.Group.climate>Aislamiento y temperatura</MSS.Group.climate>
+  <MSS.Group.practical>Peso, valor y fabricación</MSS.Group.practical>
+  <MSS.Group.other>Otras características</MSS.Group.other>
+  <MSS.ArmorBlunt>Protección contundente</MSS.ArmorBlunt>
+  <MSS.ArmorSharp>Protección cortante</MSS.ArmorSharp>
+  <MSS.ArmorHeat>Protección frente al calor</MSS.ArmorHeat>
+  <MSS.Weight>Peso</MSS.Weight>
+  <MSS.MeleeDamage>Daño por golpe (CaC)</MSS.MeleeDamage>
+  <MSS.BluntDamage>Daño contundente (CaC)</MSS.BluntDamage>
+  <MSS.SharpDamage>Daño cortante (CaC)</MSS.SharpDamage>
+  <MSS.MeleeReference>Mayor daño de un golpe cuerpo a cuerpo del tipo elegido, usando el material de referencia y sin un atacante. Cero significa que no tiene un ataque estándar de ese tipo. No es DPS ni incluye efectos secundarios. Los sistemas de combate propios pueden necesitar adaptación.</MSS.MeleeReference>
+  <MSS.CategoryTitle>¿Qué quieres fabricar?</MSS.CategoryTitle>
+  <MSS.MoreCategories>Mostrar categorías específicas</MSS.MoreCategories>
+  <MSS.RecipeCount>{0} recetas</MSS.RecipeCount>
+  <MSS.NoMatches>No hay resultados para esta búsqueda.</MSS.NoMatches>
+  <MSS.MaterialTitle>Material de comparación</MSS.MaterialTitle>
+  <MSS.StoredOnly>Solo materiales almacenados</MSS.StoredOnly>
+  <MSS.StoredCount>{0} en almacén</MSS.StoredCount>
+  <MSS.AutoMaterial>Predeterminado de cada objeto</MSS.AutoMaterial>
+  <MSS.AutoMaterialHelp>Puede usar materiales que no estén almacenados.</MSS.AutoMaterialHelp>
+  <MSS.NoStoredMaterials>No hay materiales compatibles almacenados que coincidan con la búsqueda. Desmarca Solo materiales almacenados para ver todos los compatibles.</MSS.NoStoredMaterials>
+  <MSS.NoMap>No hay un mapa de la colonia abierto para consultar los almacenes.</MSS.NoMap>
+</LanguageData>

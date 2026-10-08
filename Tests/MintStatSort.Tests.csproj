@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Checks.cs" />
+    <Compile Include="../Source/SortingCore.cs" Link="SortingCore.cs" />
+    <Compile Include="../Source/ReferenceCore.cs" Link="ReferenceCore.cs" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.5" />
+    <PackageReference Include="System.Management.Automation" Version="7.4.7" />
+  </ItemGroup>
+</Project>
