@@ -36,6 +36,51 @@ internal static class Checks
     private static string Order(IEnumerable<Sample> rows) { return string.Join(",", rows.Select(r => r.Id)); }
     public static void Main(string[] args)
     {
+        if (args.Length != 0 && args[0] == "--parse-script")
+        {
+            if (args.Length < 2) throw new Exception("Pass one or more PowerShell script paths after --parse-script.");
+            CheckScripts(args.Skip(1));
+            Console.WriteLine("Passed " + count + " PowerShell syntax checks.");
+            return;
+        }
+        if (args.Length > 0 && args[0] == "--ce")
+        {
+            foreach (string path in args.Skip(1))
+            using (var module = ModuleDefinition.ReadModule(path))
+            {
+                foreach (var contract in new[] {
+                    new[] { "ProjectilePropertiesCE", "armorPenetrationSharp", "armorPenetrationBlunt", "pelletCount", "warmupMultiplier", "warmupOffset" },
+                    new[] { "CompProperties_AmmoUser", "ammoSet", "magazineSize", "reloadTime" },
+                    new[] { "AmmoSetDef", "ammoTypes" }, new[] { "AmmoLink", "ammo", "projectile" },
+                    new[] { "VerbPropertiesCE", "useEquipmentStatValues" } })
+                {
+                    var type = module.Types.Single(t => t.FullName == "CombatExtended." + contract[0]);
+                    foreach (string field in contract.Skip(1))
+                        Check(type.Fields.Any(f => f.Name == field && f.IsPublic), "CE public field " + contract[0] + "." + field);
+                }
+                Console.WriteLine("CE schema checked: " + path);
+            }
+            using (var module = ModuleDefinition.ReadModule(Path.Combine(AppContext.BaseDirectory, "../../../../Mod/Assemblies/MintStatSort.dll")))
+                Check(!module.AssemblyReferences.Any(a => a.Name.Contains("CombatExtended")), "CE remains optional: no assembly reference");
+            Console.WriteLine("Passed " + count + " CE schema and optional dependency checks.");
+            return;
+        }
+        if (args.Length != 0 && args[0] == "--optional") args = args.Skip(1).ToArray();
+        PerformanceChecks.Run(Check);
+        WorkshopNotesChecks.Run(Check);
+        if (args.Length != 0 && args[0] == "--performance")
+        {
+            Console.WriteLine("Passed " + count + " UI-thread work budget and cancellation checks.");
+            return;
+        }
+        int addedBills = 0;
+        Action addBill = () => addedBills++;
+        Check(!NativeBillAction.TryExecute(true, true, false, null), "No selected action creates no bill");
+        Check(!NativeBillAction.TryExecute(false, true, false, addBill), "Destroyed or unselected table cannot receive a bill");
+        Check(!NativeBillAction.TryExecute(true, false, false, addBill), "Unavailable recipe cannot be added");
+        Check(!NativeBillAction.TryExecute(true, true, true, addBill), "Disabled native option cannot be added");
+        Check(addedBills == 0, "Rejected actions leave bill stack unchanged");
+        Check(NativeBillAction.TryExecute(true, true, false, addBill) && addedBills == 1, "Add bill invokes the original action exactly once");
         var samples = new List<Sample>
         {
             new Sample { Id = "missing", Name = "A", Value = null },
@@ -71,6 +116,23 @@ internal static class Checks
         Check(SortingCore.Numeric(samples.Concat(samples.Take(1)), r => r.Value, r => r.Name, true).Count == 6, "Keep all recipes including duplicate styles");
         CheckMultipleGoals();
         CheckReferences();
+        ComparisonChecks.Run(Check);
+        FeatureChecks.Run(Check);
+        IngredientChecks.Run(Check);
+        Release0610Checks.Run(Check);
+
+        if (args.Length != 0 && args[0] == "--vanilla")
+        {
+            if (args.Length != 3 || !File.Exists(args[1]) || !File.Exists(args[2]))
+                throw new Exception("Use --vanilla RIMWORLD_ASSEMBLY_CSHARP.dll MINTSTATSORT.dll.");
+            NativeMenuChecks.Run(Check);
+            NativeMenuChecks.Metadata(args[1], args[2], Check);
+            WorkshopNotesChecks.Metadata(args[1], args[2], Check);
+            using (var mod = ModuleDefinition.ReadModule(args[2])) PerformanceChecks.Metadata(mod, Check);
+            CheckInstallScripts();
+            Console.WriteLine("Passed " + count + " sorting, native menu, optional dependency and PowerShell checks.");
+            return;
+        }
 
         if (args.Length < 2 || !File.Exists(args[0]) || !File.Exists(args[1]))
             throw new Exception("Pass the Dubs Mint Menus 1.6 DLL and Nice Bill Tab DLL paths to check their real patch points.");
@@ -137,18 +199,25 @@ internal static class Checks
                   click.Parameters.Select(p => p.ParameterType.FullName).SequenceEqual(new[] { "UnityEngine.Rect", "NiceBillTab.RecipeHolder" }), "Nice tooltip hook uses the existing card hit area");
             Console.WriteLine("Nice assembly checked: " + module.Assembly.Name);
         }
+        using (var mod = ModuleDefinition.ReadModule(Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "../../../../Mod/Assemblies/MintStatSort.dll"))))
+            PerformanceChecks.Metadata(mod, Check);
+        CheckInstallScripts();
+        CheckScripts(args.Skip(2));
+        Console.WriteLine("Passed " + count + " sorting, Dubs/Nice integration and PowerShell checks.");
+    }
+    private static void CheckInstallScripts()
+    {
         string root = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "../../../../"));
-        foreach (string script in Directory.GetFiles(Path.Combine(root, "Windows"), "*.ps1"))
+        CheckScripts(Directory.GetFiles(Path.Combine(root, "Windows"), "*.ps1"));
+    }
+    private static void CheckScripts(IEnumerable<string> scripts)
+    {
+        foreach (string script in scripts)
         {
+            if (!File.Exists(script)) throw new FileNotFoundException("PowerShell script does not exist.", script);
             Parser.ParseFile(script, out _, out ParseError[] errors);
             Check(errors.Length == 0, "PowerShell syntax: " + script);
         }
-        foreach (string script in args.Skip(2))
-        {
-            Parser.ParseFile(script, out _, out ParseError[] errors);
-            Check(errors.Length == 0, "Copyable PowerShell syntax: " + script);
-        }
-        Console.WriteLine("Passed " + count + " sorting, Dubs/Nice integration and PowerShell checks.");
     }
     private static IEnumerable<MethodReference> Calls(MethodDefinition method)
     {

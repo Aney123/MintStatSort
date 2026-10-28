@@ -3,7 +3,7 @@
     <TargetFramework>net472</TargetFramework>
     <LangVersion>latest</LangVersion>
     <AssemblyName>MintStatSort</AssemblyName>
-    <Version>0.3.0</Version>
+    <Version>0.6.10</Version>
     <OutputPath>../Mod/Assemblies/</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>

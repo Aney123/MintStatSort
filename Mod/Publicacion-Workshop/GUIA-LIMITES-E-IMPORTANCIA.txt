@@ -1,0 +1,28 @@
+MINTSTATSORT 0.6.5 — LÍMITES E IMPORTANCIA
+
+1. Abre el comparador de recetas y elige categoría, material y calidad.
+2. Junto a una característica, pulsa ×1 (o … si aún no está seleccionada).
+3. Introduce un mínimo y/o máximo; deja vacío para no limitar. Los extremos
+   están incluidos. Coma y punto funcionan como decimal, sin separadores de miles.
+   Para protección de 60%, introduce 60. Peso se expresa en kg. CE utiliza
+   mm RHA y MPa; recarga CE en segundos. Otros formatos especiales utilizan
+   el valor base; la descripción de cada dato muestra la referencia numérica.
+4. Elige importancia de 1 a 5. 1 conserva el valor inicial; 5 da más influencia
+   cuando hay varias características. La puntuación es relativa a las recetas
+   visibles y sigue favoreciendo el equilibrio. No es un porcentaje de armadura.
+5. Aplicar en este diálogo cambia la vista previa. Para guardar, pulsa también
+   Aplicar/Guardar filtros en el comparador, o guarda explícitamente un perfil.
+   Cerrar el comparador descarta la comparación que no hayas aplicado.
+6. Un botón * indica límites activos. Si no aparecen recetas, ajusta esos límites,
+   deja los campos vacíos o restablece. Una receta sin datos para un límite activo
+   se oculta; una receta pendiente permanece visible hasta terminar el cálculo.
+7. Los perfiles y la memoria de cada tipo de mesa incluyen límites e importancia.
+   Desmarcar una característica elimina sus límites. Los ajustes de versiones
+   anteriores se cargan con importancia 1 y sin límites.
+
+Ejemplo: peso máximo 8 kg y daño mínimo 20; importancia 3 para daño y 1 para peso.
+− y + eligen si prefieres menos o más, independientemente de los límites.
+Los cambios de importancia y límites reutilizan los datos de material/calidad.
+Consulta GUIA-PERFILES-Y-FAVORITAS.txt para las funciones de la versión anterior.
+Reinicia RimWorld tras instalar. No se publica ninguna actualización en Steam
+durante la instalación: publica tú desde el menú de mods cuando corresponda.

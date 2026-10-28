@@ -1,0 +1,23 @@
+GALERÍA PROMOCIONAL — ORDEN RECOMENDADO
+
+00-portada-horizontal.jpg: identidad del mod; ilustración, no captura de interfaz.
+01-elige-que-fabricar.jpg: lista de recetas, criterios, material y perfil.
+02-compara-tres-recetas.jpg: anorak, chaqueta y gabardina lado a lado.
+03-planifica-ingredientes.jpg: cuatro ejecuciones; 320 tela necesaria,
+                           300 almacenada, 20 faltante.
+04-personaliza-comparacion.jpg: orden, ancho y visibilidad de columnas.
+
+Sube 01–04 a las imágenes adicionales del artículo de Steam. Si prefieres
+mostrar el juego sin edición, usa Capturas-originales/01-lista-recetas.png,
+02-recetas-fijadas.png, 03-ingredientes-cuatro.png, 04-columnas.png y
+05-proyecto-creado.png. Cada archivo proviene del renderizador real del juego.
+
+Los rótulos y marcos se prepararon con ImageGen integrado. La portada es una
+ilustración. La galería se revisó frente a los originales y se corrigieron las
+lecturas de aislamiento de las dos túnicas tribales a 9.0C en la primera imagen.
+La edición no representa una nueva interfaz implementada. Los originales
+permiten comprobar la distribución y los textos exactos del juego.
+
+Todas las imágenes de subida son JPEG. Preview.png mantiene formato PNG.
+Los maestros de edición se conservan en la carpeta de trabajo; las copias
+preparadas para Steam y sus originales están incluidas en el instalador.

@@ -1,0 +1,47 @@
+{
+  "version": "0.6.9",
+  "mode": "ImageGen integrado; codificación PNG/JPEG mediante Sharp",
+  "preview": {
+    "file": "../About/Preview.png",
+    "width": 1536,
+    "height": 864,
+    "bytes": 438514
+  },
+  "assets": [
+    {
+      "name": "00-portada-horizontal",
+      "file": "Imagenes-promocionales/00-portada-horizontal.jpg",
+      "width": 1536,
+      "height": 864,
+      "bytes": 395100
+    },
+    {
+      "name": "01-elige-que-fabricar",
+      "file": "Imagenes-promocionales/01-elige-que-fabricar.jpg",
+      "width": 1672,
+      "height": 941,
+      "bytes": 271942
+    },
+    {
+      "name": "02-compara-tres-recetas",
+      "file": "Imagenes-promocionales/02-compara-tres-recetas.jpg",
+      "width": 1672,
+      "height": 941,
+      "bytes": 189130
+    },
+    {
+      "name": "03-planifica-ingredientes",
+      "file": "Imagenes-promocionales/03-planifica-ingredientes.jpg",
+      "width": 1672,
+      "height": 941,
+      "bytes": 243846
+    },
+    {
+      "name": "04-personaliza-comparacion",
+      "file": "Imagenes-promocionales/04-personaliza-comparacion.jpg",
+      "width": 1672,
+      "height": 941,
+      "bytes": 245111
+    }
+  ]
+}

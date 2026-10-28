@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ModMetaData>
+  <name>MintStatSort — Ordena y compara recetas</name>
+  <author>MintStatSort</author>
+  <packageId>mintstatsort.recipes</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>andromeda.nicebilltab</li>
+    <li>dubwise.dubsmintmenus</li>
+    <li>hicon.nicebilltabexpansion</li>
+    <li>CETeam.CombatExtended</li>
+  </loadAfter>
+  <description>ENGLISH
+Search, compare and sort your workbench recipes. Combine categories and statistics, pin up to three recipes, estimate ingredients for multiple recipe executions and save profiles. Includes custom columns, an estimated-shortage filter and local diagnostics. Requires RimWorld 1.6 and Harmony; Nice Bill Tab, Dubs Mint Menus and Combat Extended are optional. Apply comparison saves settings; Add bill creates the production order.
+
+ESPAÑOL
+Busca, compara y ordena las recetas de tus mesas de trabajo. Combina categorías y estadísticas, fija hasta tres recetas, estima ingredientes para varias ejecuciones y guarda perfiles. Incluye columnas personalizables, filtro por faltantes estimados y diagnóstico local. Requiere RimWorld 1.6 y Harmony; Nice Bill Tab, Dubs Mint Menus y Combat Extended son opcionales. Aplicar comparación guarda ajustes; Añadir proyecto crea la orden de fabricación.
+
+0.6.10: score explanations, presets, recipe requirements, optional ingredient substitutes, CE ammo selection and sustained DPS, compact panels and keyboard shortcuts. English, Spanish and Latin American Spanish.
+
+0.6.10: explicación de puntuaciones, perfiles predefinidos, requisitos de recetas, sustitutos opcionales, selección de munición y DPS sostenido con CE, paneles compactos y atajos. Inglés, español y español latinoamericano.</description>
+  <modVersion>0.6.10</modVersion>
+</ModMetaData>

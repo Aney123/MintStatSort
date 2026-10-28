@@ -1,0 +1,21 @@
+# Generated files; keep the mod's own ready-to-use DLL.
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+__pycache__/
+*.pyc
+/dist/
+/artifacts/
+/Dependencies/
+/Revision-privada/
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+**/PublishedFileId.txt
+# Deliberately do not ignore Mod/Assemblies/MintStatSort.dll or packages.lock.json.

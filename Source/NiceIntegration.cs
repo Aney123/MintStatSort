@@ -16,6 +16,7 @@ namespace MintStatSort
     {
         internal static bool Ready;
         private static Type holderType;
+        private static Building_WorkTable currentTable;
         private static FieldInfo recipeField, labelField, availableField, scrollField, animationField, modeField;
 
         internal static void Install(Harmony harmony)
@@ -79,7 +80,12 @@ namespace MintStatSort
         }
         private static RecipeDef Recipe(object holder) { return (RecipeDef)recipeField.GetValue(holder); }
         private static string Label(object holder) { return (string)labelField.GetValue(holder); }
-        private static void BeforeLeftPart(Building_WorkTable __1) { RecipeSession.SetMap(__1?.Map ?? Find.CurrentMap); }
+        private static void BeforeLeftPart(Building_WorkTable __1)
+        {
+            currentTable = __1;
+            RecipeSession.SetMap(__1?.Map ?? Find.CurrentMap);
+            RecipeSession.SetBench(__1?.def.defName);
+        }
 
         private static IEnumerable<CodeInstruction> MenuTranspiler(IEnumerable<CodeInstruction> instructions)
         {
@@ -106,7 +112,10 @@ namespace MintStatSort
             {
                 var holders = (IEnumerable)availableField.GetValue(null);
                 RecipeSession.SetRecipes(holders.Cast<object>().Select(Recipe).ToList());
-                Toolbar.Draw(new Rect(viewport.x, viewport.y, viewport.width - 16f, Toolbar.Height));
+                var table = currentTable;
+                Toolbar.Draw(new Rect(viewport.x, viewport.y, viewport.width - 16f, Toolbar.Height),
+                    () => table != null && table.Spawned && !table.Destroyed && table.Map == Find.CurrentMap &&
+                        ReferenceEquals(Find.Selector.SingleSelectedThing, table), table?.LabelCap.ToString() ?? "Nice Bill Tab", table?.def.defName);
                 viewport.y += Toolbar.Height;
                 viewport.height -= Toolbar.Height;
             }
@@ -146,7 +155,7 @@ namespace MintStatSort
             // A category tree cannot express a global highest-to-lowest order.
             // Use Nice's own compact cards temporarily, without changing settings.
             bool active = RecipeSession.CurrentMetric.Id != "original" ||
-                (!string.IsNullOrEmpty(RecipeSession.Options.Category) && RecipeSession.Options.Category != "all");
+                (!string.IsNullOrEmpty(RecipeSession.Options.Category) && RecipeSession.Options.Category != "all") || RecipeSession.Options.FavoritesOnly;
             return Ready && RecipeSession.Options.Enabled && active && original == 2 ? 1 : original;
         }
         private static IEnumerable<CodeInstruction> RowTranspiler(IEnumerable<CodeInstruction> instructions)

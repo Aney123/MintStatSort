@@ -1,0 +1,56 @@
+MINTSTATSORT 0.6.10 — PUBLICACIÓN LISTA
+
+1. Instala y reinicia RimWorld con Harmony y MintStatSort activos.
+2. Activa Opciones → General → Modo desarrollador para mostrar la publicación.
+   En Mods, selecciona la copia local MintStatSort de Mods/MintStatSort.
+3. Usa Avanzado… → Actualizar en la Workshop para el artículo existente y
+   revisa la confirmación del juego.
+   PublishedFileId enlaza con tu publicación; el instalador conserva ese archivo.
+
+LO QUE ACOMPAÑA A ESA ACTUALIZACIÓN DESDE RIMWORLD
+- Título: nombre de About/About.xml, coincidente con titulo.txt.
+- Descripción: inglés primero y español después en un único texto BBCode.
+  descripcion-workshop-bilingue.txt contiene el texto completo; la copia
+  idéntica descripcion-workshop-es.txt conserva el nombre que lee la DLL.
+- Portada principal: About/Preview.png, horizontal 1536 × 864 y menor de 1 MB.
+- Notas sobre cambios: notas-actualizacion-steam.txt, solo esta versión.
+- Contenido: DLL, idiomas y archivos de la carpeta del mod.
+
+La integración requiere la DLL nueva cargada tras reiniciar. Lee los archivos
+de la carpeta que se está subiendo y valida su versión. publicacion-version.txt
+debe empezar y terminar con la línea MintStatSort 0.6.10 para esta entrega.
+Las notas también empiezan con esa línea. Si faltan archivos o la versión no
+coincide, se conserva el comportamiento normal del publicador. Se aplica solo
+a mintstatsort.recipes y conserva las llamadas originales de Steam.
+
+PASOS EN LA PÁGINA DE STEAM
+- Añade Harmony a Elementos requeridos si todavía no está añadido.
+- Sube manualmente las cuatro imágenes 01–04 de Imagenes-promocionales.
+  La galería adicional no se envía automáticamente desde el publicador nativo.
+- 00-portada-horizontal.jpg es una alternativa de portada; Preview.png ya es
+  la portada que envía RimWorld. No necesitas subir ambas a la galería.
+- La descripción enviada desde RimWorld ya contiene inglés y español.
+  No necesitas pegar la traducción aparte para mostrar ambos idiomas.
+  Si editas el texto, actualiza descripcion-workshop-es.txt y su copia
+  bilingüe: el publicador lee el primero y admite hasta 7999 bytes UTF-8.
+  descripcion-workshop-en.txt y descripcion-solo-es.txt son alternativas
+  de un solo idioma; no se envían automáticamente.
+- Revisa la visibilidad y las etiquetas que permita tu formulario. La versión
+  declarada y enviada por el juego es 1.6; datos-publicacion.txt resume requisitos.
+
+ARCHIVOS INCLUIDOS
+titulo.txt, descripción bilingüe y alternativas ES/EN, datos-publicacion.txt, notas actuales,
+historial notas-version-es.txt, guía de interfaz y guía de galería,
+informe de validación, portada, cinco diseños promocionales y capturas originales.
+imagenes-manifiesto.json registra tamaños; prompts-imagenes-0.6.10.json registra
+las instrucciones utilizadas con ImageGen integrado.
+
+Las capturas se hicieron en una colonia de demostración separada, con mesas,
+investigaciones completadas y materiales preparados. Los marcos y rótulos son
+ediciones promocionales. Se comprobó la creación de una orden de anorak en la
+lista original de proyectos; no se afirma haber completado su fabricación.
+El paquete prepara la publicación local. El envío a Steam se inicia con tu
+acción en el menú del juego. No se publicó una actualización de prueba.
+
+Referencia de la API nativa y requisitos de portada:
+https://partner.steamgames.com/doc/api/ISteamUGC

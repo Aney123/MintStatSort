@@ -20,6 +20,7 @@ namespace MintStatSort
         internal static bool Ready;
         internal static FieldInfo ScrollField;
         private static FieldInfo cullingField;
+        private static List<Building> currentTables = new List<Building>();
         [ThreadStatic] private static RowContext row;
         internal static void Install(Harmony harmony)
         {
@@ -54,7 +55,9 @@ namespace MintStatSort
         {
             if (Ready && RecipeSession.Options.Enabled)
             {
+                currentTables = __1?.Where(b => b != null).ToList() ?? new List<Building>();
                 RecipeSession.SetMap(__1?.FirstOrDefault(b => b?.Map != null)?.Map ?? Find.CurrentMap);
+                RecipeSession.SetBench(BenchKey(currentTables));
                 RecipeSession.SetRecipes(__2);
             }
         }
@@ -76,7 +79,10 @@ namespace MintStatSort
         {
             if (Ready && RecipeSession.Options.Enabled && viewport.height > Toolbar.Height + 40f)
             {
-                Toolbar.Draw(new Rect(viewport.x, viewport.y, viewport.width - 1f, Toolbar.Height));
+                var tables = currentTables.ToList();
+                Toolbar.Draw(new Rect(viewport.x, viewport.y, viewport.width - 1f, Toolbar.Height),
+                    () => tables.Count > 0 && tables.All(t => t.Spawned && !t.Destroyed && t.Map == Find.CurrentMap && Find.Selector.IsSelected(t)),
+                    tables.Count == 1 ? tables[0].LabelCap.ToString() : "Dubs Mint Menus", BenchKey(tables));
                 viewport.y += Toolbar.Height;
                 viewport.height -= Toolbar.Height;
                 var culling = (Rect)cullingField.GetValue(null);
@@ -84,6 +90,11 @@ namespace MintStatSort
                 cullingField.SetValue(null, culling);
             }
             Widgets.BeginScrollView(viewport, ref scroll, content, showScrollbars);
+        }
+        private static string BenchKey(List<Building> tables)
+        {
+            string first = tables.FirstOrDefault()?.def.defName;
+            return first != null && tables.All(t => t.def.defName == first) ? first : null;
         }
         private static IEnumerable<CodeInstruction> ListTranspiler(IEnumerable<CodeInstruction> instructions)
         {

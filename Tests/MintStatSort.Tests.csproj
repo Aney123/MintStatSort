@@ -5,8 +5,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Checks.cs" />
+    <Compile Include="WorkshopNotesChecks.cs" />
+    <Compile Include="../Source/WorkshopNotesCore.cs" Link="WorkshopNotesCore.cs" />
+    <Compile Include="../Source/WorkshopDescriptionCore.cs" Link="WorkshopDescriptionCore.cs" />
+    <Compile Include="../Source/NativeBillAction.cs" Link="NativeBillAction.cs" />
+    <Compile Include="ComparisonChecks.cs" />
+    <Compile Include="FeatureChecks.cs" />
+    <Compile Include="Release0610Checks.cs" />
+    <Compile Include="../Source/SustainedDamage.cs" Link="SustainedDamage.cs" />
+    <Compile Include="../Source/SubstituteAllocation.cs" Link="SubstituteAllocation.cs" />
+    <Compile Include="../Source/BatchCount.cs" Link="BatchCount.cs" />
+    <Compile Include="../Source/ProfileDocument.cs" Link="ProfileDocument.cs" />
+    <Compile Include="../Source/CategorySelection.cs" Link="CategorySelection.cs" />
+    <Compile Include="IngredientChecks.cs" />
+    <Compile Include="../Source/IngredientAllocation.cs" Link="IngredientAllocation.cs" />
+    <Compile Include="PerformanceChecks.cs" />
+    <Compile Include="../Source/BudgetedWork.cs" Link="BudgetedWork.cs" />
+    <Compile Include="../Source/ComparisonLayout.cs" Link="ComparisonLayout.cs" />
+    <Compile Include="NativeMenuChecks.cs" />
     <Compile Include="../Source/SortingCore.cs" Link="SortingCore.cs" />
+    <Compile Include="../Source/NumericFilterCore.cs" Link="NumericFilterCore.cs" />
     <Compile Include="../Source/ReferenceCore.cs" Link="ReferenceCore.cs" />
+    <Compile Include="../Source/NativeMenuCore.cs" Link="NativeMenuCore.cs" />
     <PackageReference Include="Mono.Cecil" Version="0.11.5" />
     <PackageReference Include="System.Management.Automation" Version="7.4.7" />
   </ItemGroup>

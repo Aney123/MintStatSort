@@ -1,0 +1,21 @@
+MintStatSort 0.6.7 — Guía de la nueva interfaz
+
+CATEGORÍAS
+Pulsa varias categorías para activarlas juntas. Armaduras + Prendas muestra recetas de cualquiera de las dos, sin duplicarlas. Vuelve a pulsar una categoría para quitarla. Más permite combinar también categorías adicionales. Todas quita solo las categorías.
+
+ORDEN Y COMPARACIÓN
+Estadísticas ordena por la comparación elegida. Nombre y el encabezado Producto / receta ordenan alfabéticamente sin borrar estadísticas ni límites. Orden original recupera la secuencia del menú para las recetas que pasan los filtros. Volver a Estadísticas recupera los mismos criterios.
+Las casillas incluyen/excluyen estadísticas. Importancia controla cuánto influye cada una (1 a 5); Mayor valor / Menor valor indica tu preferencia. Límites abre mínimos y máximos. Añadir muestra estadísticas disponibles; la búsqueda permite encontrarlas. Las activas aparecen primero. La puntuación total es relativa al conjunto comparado, no una calidad absoluta.
+
+FILTROS Y RESTABLECER
+Cada etiqueta × elimina únicamente su restricción. Limpiar filtros borra búsqueda de recetas, categorías, favoritas y límites; mantiene las estadísticas y su importancia, material, calidad, perfiles y estrellas. Restablecer comparación recupera los ajustes iniciales del borrador. Ninguna de estas acciones borra perfiles ni favoritas guardadas.
+
+INGREDIENTES
+Selecciona una receta para ver un resumen inferior de hasta tres ingredientes. Ver ingredientes muestra todos los requisitos y permite elegir referencias alternativas. Las existencias son una estimación de almacenamiento: no garantizan acceso de colonos ni sustituyen las restricciones de una orden concreta. No se consumen materiales al comparar.
+
+PERFILES Y PROYECTOS
+El perfil y Guardar perfil están en la cabecera. … permite eliminar perfiles explícitamente. Aplicar comparación guarda el borrador; Cerrar descarta cambios pendientes de comparación. Guardar perfil y marcar favoritas son acciones de guardado explícitas e independientes.
+Con el menú nativo, selecciona una receta y pulsa Añadir proyecto para crear la orden mediante la acción original del juego. Aplicar comparación por sí solo no crea un proyecto.
+
+COMPATIBILIDAD
+Solo Harmony es obligatorio. Nice Bill Tab, Dubs Mint Menus y Combat Extended son opcionales. La interfaz ajusta su tamaño a la pantalla; tablas y panel lateral se desplazan para conservar los controles.

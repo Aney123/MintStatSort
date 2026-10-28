@@ -1,0 +1,53 @@
+DATOS PARA PUBLICAR MINTSTATSORT 0.6.10
+
+Título recomendado:
+MintStatSort — Ordena y compara recetas
+
+Título alternativo para público internacional:
+MintStatSort — Recipe Stat Sorting
+
+Resumen corto:
+Busca, compara y ordena recetas por daño, protección, peso y otras estadísticas. Funciona con el menú normal de RimWorld 1.6 e incluye integración opcional con Nice Bill Tab, Dubs Mint Menus y Combat Extended.
+
+Versión del mod: 0.6.10
+Versión de RimWorld indicada por el mod: 1.6
+Idiomas de la interfaz: inglés, español y español latinoamericano
+Identificador del paquete: mintstatsort.recipes
+Dependencia obligatoria: Harmony (brrainz.harmony)
+Integraciones opcionales: Nice Bill Tab, Dubs Mint Menus y Combat Extended
+DLC: el mod no declara ninguna dependencia de DLC
+
+DEPENDENCIAS EN WORKSHOP
+Añade Harmony a «Elementos requeridos».
+No marques Nice Bill Tab, Dubs Mint Menus ni Combat Extended como obligatorios; el mod contempla su ausencia.
+
+ORDEN DE CARGA
+Harmony antes de MintStatSort.
+Si están instalados, Nice Bill Tab, Dubs Mint Menus y Combat Extended antes de MintStatSort.
+
+ETIQUETAS
+Selecciona 1.6 si aparece en las opciones del juego o de Workshop.
+Si el formulario ofrece etiquetas de interfaz, calidad de vida o utilidad, elige las equivalentes disponibles.
+Estas son sugerencias de categoría; no se ha verificado aquí qué etiquetas admite el formulario concreto de publicación. No añadas versiones anteriores del juego que el mod no declara compatibles.
+
+ARCHIVOS Y CAMPOS PREPARADOS
+titulo.txt: título.
+descripcion-workshop-bilingue.txt: descripción completa en inglés y español, en ese orden.
+descripcion-workshop-es.txt: copia idéntica de la descripción bilingüe; este nombre histórico es el que lee la DLL 0.6.10 al enviar la actualización desde RimWorld con el manifiesto válido.
+descripcion-workshop-en.txt: alternativa solo en inglés, con BBCode de Steam.
+descripcion-solo-es.txt: alternativa solo en español, con BBCode de Steam.
+La descripción automática muestra ambos idiomas sin añadir una traducción manual.
+notas-version-es.txt: historial de versiones.
+notas-actualizacion-steam.txt: notas de esta versión, enviadas automáticamente
+al publicar o actualizar desde RimWorld con MintStatSort activo tras reiniciar.
+
+FLUJO QUE DEBE QUEDAR CLARO EN LA PÁGINA
+Menú normal: Proyectos → Añadir proyecto → seleccionar receta → Añadir proyecto dentro del comparador.
+Guardar filtros solo guarda la comparación y no añade órdenes.
+Nice Bill Tab / Dubs Mint Menus: Comparar recetas → Aplicar → añadir desde las tarjetas originales.
+
+ALCANCE DE LAS AFIRMACIONES
+La información está contrastada con los archivos y el código locales de la versión 0.6.10.
+La versión se probó en procesos reales de RimWorld, con revisión visual y una creación de proyecto mediante un clic real. Las capturas promocionales usan una colonia de demostración separada; no acreditan todas las combinaciones de mods ni fabricación completada.
+No se promete compatibilidad universal con todos los mods ni precisión de DPS de combate real.
+No se han inventado enlaces públicos, nombres de autor ni una licencia.

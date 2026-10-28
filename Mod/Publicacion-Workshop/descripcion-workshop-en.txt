@@ -1,0 +1,31 @@
+[h2]Choose what to craft with the numbers in view[/h2]
+MintStatSort lets you search, compare and sort workbench recipes before crafting. Requires [b]RimWorld 1.6 and Harmony[/b]. Nice Bill Tab, Dubs Mint Menus and Combat Extended are optional.
+
+[h2]Compare and organize[/h2]
+[list]
+[*]Combine categories, search by name and mark favourites.
+[*]Compare damage, range, protection, mass, insulation and other supported statistics. Prefer higher or lower values, set importance from 1 to 5, and apply minimum/maximum limits.
+[*]Pin up to three recipes side by side. Reorder, resize and hide columns without disabling their criteria.
+[*]Inspect the score tooltip: normalized values, weight shares and constant criteria. Total scores use a weighted geometric mean relative to the compared recipes; they are not damage or armour percentages.
+[*]Start with protection, cold-weather, light equipment or long-range presets. Save, rename, duplicate and exchange profiles as XML; workbench preferences are remembered.
+[*]Recipe tooltips show skill requirements and unfinished research when identifiable. Other game or workbench restrictions keep a general notice. No pawn is selected by the comparison.
+[/list]
+
+[h2]Ingredients and substitutes[/h2]
+Inspect requirements and stored-stock shortages for 1–999 executions of the base recipe. Some recipes produce several units per execution.
+By default, each ingredient uses one compatible reference. Enable [b]Consider compatible substitutes[/b] from the … menu or ingredient panel to estimate other stored alternatives. Types combine only when the recipe allows mixing; stuff products retain their reference stuff. Figures use equivalent reference units and rounded recipe quantities. Restricted ingredients are allocated first and a stack cannot count twice in the same recipe.
+This is a conservative estimate. It does not reserve stock across recipes or check pawn access, skills, research or bill restrictions. Unknown estimates do not pass [b]No estimated shortages[/b] after calculation finishes.
+
+[h2]Optional Combat Extended integration[/h2]
+Compare sharp/blunt penetration, magazine capacity, reload time and CE armour units. Select a compatible weapon recipe and use … → Comparison ammunition to choose its projectile reference. Other weapons fall back explicitly if the selected ammo is incompatible.
+Theoretical burst DPS excludes reloads. [b]Sustained theoretical DPS[/b] includes repeated full magazines and complete reloads, including per-cartridge reloads, at reload speed 100%. Both exclude accuracy, aiming, armour and secondary damage; the sustained reference uses the default burst.
+
+[h2]Use and controls[/h2]
+Select a workbench → Bills → Add bill. Choose a recipe and use [b]Add bill[/b] to invoke the original game action. [b]Apply comparison only saves settings[/b]; material, quality and execution count do not change production orders.
+With Nice Bill Tab or Dubs Mint Menus, open Compare recipes, apply settings and add the bill from their original cards.
+Narrow windows separate recipes and comparison into tabs; short windows scroll. Ctrl+F searches, Alt+↑/↓ selects recipes, Ctrl+P pins, Ctrl+Enter saves comparison, Ctrl+Tab switches compact panels, Esc closes.
+
+[h2]Installation and reporting[/h2]
+Load Harmony before MintStatSort and any optional integrations before it. Restart RimWorld after updates. Interface: English, Spanish and Latin American Spanish.
+Statistics and stock prepare gradually with cached readings and visible progress. … → Diagnostics copies or saves a local report. To report a problem, provide the workbench, recipe, steps, screenshot and report; attach Player.log for errors.
+Screenshots: demonstration colony with prepared stock/research; promotional frames added outside the game.
