@@ -1,0 +1,37 @@
+MINTSTATSORT 0.6.6 — INGREDIENTES Y FILTROS ACTIVOS
+
+INGREDIENTES
+Selecciona una fila de receta y pulsa el botón Ingredientes bajo la lista.
+El panel muestra una ejecución de la receta base, que puede producir un lote.
+Para cada requisito puedes elegir un ingrediente compatible como referencia.
+Necesarios usa el cálculo del juego y redondea a unidades completas, también
+cuando se consume nutrición. Almacenados cuenta existencias compatibles de esa
+referencia en almacenes del mapa; Faltantes compara esa cantidad con lo requerido.
+Las unidades asignadas a requisitos anteriores de la vista previa se descuentan
+de los siguientes para no reutilizar la misma pila.
+
+La elección es una referencia local del panel: no cambia los filtros de una orden,
+el material del comparador ni el inventario. Los sustitutos distintos no se suman,
+incluso si una receta admite mezclarlos. El panel no comprueba acceso de colonos,
+reservas, restricciones de una orden concreta ni modificadores de su trabajador.
+Los resultados son una estimación de la receta base y de existencias almacenadas,
+no una garantía de que un colono pueda fabricar.
+
+Los recuentos se preparan por etapas y se actualizan periódicamente. Actualizar
+fuerza una nueva lectura. Se conservan datos anteriores mientras se refrescan;
+una referencia nueva muestra … hasta disponer del resultado. — indica ausencia
+de estimación, por ejemplo sin mapa o con recetas que consumen pilas completas.
+Cerrar cancela los trabajos pendientes. No se consultan todas las recetas para
+mostrar ingredientes: solo la receta del panel abierto.
+
+FILTROS ACTIVOS
+La barra bajo las categorías muestra búsqueda, categoría, favoritas y cada límite
+mínimo/máximo. Pulsa × en un botón para quitar únicamente ese filtro. Si hay muchos,
+desplaza horizontalmente la barra. Quitar todos elimina estos filtros de recetas
+manteniendo características, importancia, material y calidad de la comparación.
+No borra perfiles ni estrellas. Los cambios son una vista previa hasta Aplicar o
+Guardar filtros. La búsqueda no forma parte de los perfiles guardados.
+
+Las guías de perfiles/favoritas y límites/importancia siguen incluidas en esta
+carpeta. Reinicia RimWorld tras instalar. El instalador conserva el identificador
+de Workshop y hace una copia de la versión previa; no publica contenido en Steam.

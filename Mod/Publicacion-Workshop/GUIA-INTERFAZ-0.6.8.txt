@@ -1,0 +1,28 @@
+MintStatSort 0.6.8 — Guía de funciones y publicación
+
+COMPARAR RECETAS FIJADAS
+Selecciona una receta y pulsa Fijar en el resumen inferior. Puedes fijar hasta tres recetas distintas. Fijadas abre una tabla con todas las estadísticas activas y el material/calidad actuales. Cambiar la búsqueda o las categorías no elimina las fijadas. Se eliminan al cerrar la ventana principal.
+
+CANTIDADES
+Ejecuciones admite enteros de 1 a 999. Son veces que se realiza la receta base, no unidades del producto: algunas recetas producen varias unidades. Se multiplica cada requisito ya redondeado por el juego. Afecta al resumen, al detalle y al filtro de faltantes, no a la cantidad de una orden de fabricación. El detalle permite cambiar su cantidad de forma independiente. Los datos no estimables aparecen como —.
+
+COLUMNAS
+Columnas abre el panel de estadísticas activas. Las flechas cambian su orden; el deslizador ajusta el ancho entre 80 y 260 px; la casilla controla la visibilidad. Ocultar mantiene el criterio, la puntuación y los límites. Aplicar en ese panel modifica el borrador del comparador; Cerrar descarta sus cambios. Aplicar comparación guarda el borrador completo.
+
+SIN FALTANTES ESTIMADOS
+Activa la casilla sobre la lista. Comprueba referencias predeterminadas compatibles por ingrediente, usando el material de comparación cuando es válido y las ejecuciones elegidas. La primera pasada conserva las recetas visibles y muestra el progreso; el filtro se aplica al terminar. Las siguientes pasadas conservan el último resultado completo mientras se actualizan. No suma sustitutos diferentes. Descarta estimaciones desconocidas, como recetas que consumen pilas completas. No garantiza acceso, investigación, habilidades, reservas reales o compatibilidad con los filtros de una orden. Cada receta se estima por separado: dos recetas pueden disponer individualmente del mismo material, sin que exista para ambas juntas.
+Limpiar filtros desactiva esta restricción y conserva estadísticas, cantidades, columnas, calidad y material. Restablecer comparación recupera cantidades y columnas predeterminadas. Ninguna acción borra perfiles o favoritas.
+
+PERFILES
+Guarda primero el perfil desde la cabecera. En … encontrarás Renombrar, Duplicar, Exportar e Importar. Renombrar mantiene la identidad y las referencias por mesa. Duplicar crea ajustes independientes. Exportar escribe un XML de comparación; no incluye favoritas guardadas, proyectos ni inventario.
+Los XML se guardan dentro de la carpeta de datos de RimWorld en MintStatSort/Profiles. Pon allí los archivos de otra instalación y elige Importar perfil; el mensaje con carpeta aparece si no hay archivos. La importación valida el formato y crea un nombre único, sin reemplazar perfiles existentes. Estadísticas de mods ausentes se conservan por ID y se vuelven a resolver cuando estén disponibles.
+
+DIAGNÓSTICO
+Abre … > Diagnóstico, o el botón en los ajustes del mod. Muestra versión, integraciones y mods activos; desde el comparador incluye sus criterios y contexto. Copiar informe usa el portapapeles; Guardar informe escribe en MintStatSort/Diagnostics dentro de los datos del juego. No se envía ni publica automáticamente.
+
+WORKSHOP
+El ZIP incluye instalador, mod, título, descripciones ES/EN, metadatos, imágenes, historial, notas de esta versión y esta guía. El instalador copia Publicacion-Workshop a la carpeta del mod, conserva PublishedFileId y crea una copia de seguridad. Cierra RimWorld para instalar y reinícialo con MintStatSort activo.
+Al actualizar desde el menú de mods de RimWorld, la integración adjunta notas-actualizacion-steam.txt a la operación que tú inicias. La primera línea debe coincidir con modVersion. El título y las descripciones se facilitan para copiar en Workshop; no se publican por instalar el ZIP. No se ha subido una actualización de prueba a Steam.
+
+SOLO HARMONY ES OBLIGATORIO
+Nice Bill Tab, Dubs Mint Menus y Combat Extended siguen siendo opcionales. MintStatSort compara y organiza recetas; los otros menús siguen aportando sus funciones propias. Añadir proyecto usa la acción original del juego. Aplicar comparación guarda ajustes y no crea una orden.

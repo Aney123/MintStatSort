@@ -1,0 +1,8 @@
+MintStatSort 0.6.10
+
+- Explicación de puntuaciones y cuatro perfiles predefinidos.
+- Información de requisitos de las recetas.
+- Estimación opcional de ingredientes sustitutos compatibles.
+- Munición seleccionable y DPS sostenido teórico con Combat Extended.
+- Interfaz compacta y atajos de teclado.
+- Traducción completa al español latinoamericano.

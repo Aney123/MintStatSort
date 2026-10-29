@@ -1,0 +1,5 @@
+# Preserve the reviewed bytes and checksums on every platform.
+* -text
+*.png binary
+*.jpg binary
+*.dll binary

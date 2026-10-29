@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>MintStatSort isolated runtime diagnostics</name>
+  <author>Codex diagnostic</author>
+  <packageId>mintstatsort.runtimesmoke</packageId>
+  <supportedVersions><li>1.6</li></supportedVersions>
+  <modDependencies><li><packageId>mintstatsort.recipes</packageId><displayName>MintStatSort</displayName></li></modDependencies>
+  <loadAfter><li>mintstatsort.recipes</li></loadAfter>
+  <description>Scratch runtime diagnostics. Do not distribute.</description>
+</ModMetaData>

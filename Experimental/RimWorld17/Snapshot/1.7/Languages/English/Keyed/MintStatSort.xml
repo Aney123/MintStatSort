@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <MSS.Enabled>Enable the statistics selector in recipe menus</MSS.Enabled>
+  <MSS.SettingsInfo>In the normal menu, Add bill opens MintStatSort. With Nice Bill Tab or Dubs Mint Menus, click Compare recipes above the list. Apply saves the comparison; Close discards pending edits. Values use Normal quality.</MSS.SettingsInfo>
+  <MSS.Reset>Reset category, sorting and material</MSS.Reset>
+  <MSS.Original>Original order</MSS.Original>
+  <MSS.Name>Name</MSS.Name>
+  <MSS.Work>Recipe work amount</MSS.Work>
+  <MSS.ShotDamage>Damage per projectile</MSS.ShotDamage>
+  <MSS.Range>Weapon range</MSS.Range>
+  <MSS.Burst>Projectiles per burst</MSS.Burst>
+  <MSS.Penetration>Projectile armor penetration</MSS.Penetration>
+  <MSS.RangedDps>Theoretical ranged DPS</MSS.RangedDps>
+  <MSS.OtherStats>Other statistics</MSS.OtherStats>
+  <MSS.Common>Common</MSS.Common>
+  <MSS.NoData>—</MSS.NoData>
+  <MSS.NoDataTip>This recipe exposes no comparable value for the selected statistic. It goes last in both directions.</MSS.NoDataTip>
+  <MSS.IncompatibleMaterial>The selected material is not allowed for this product or recipe.</MSS.IncompatibleMaterial>
+  <MSS.NoMaterial>No allowed reference material was found.</MSS.NoMaterial>
+  <MSS.MultiProduct>This recipe has no single fixed product to compare.</MSS.MultiProduct>
+  <MSS.ReferenceDetail>Reference: {1} quality. Material: {0}.</MSS.ReferenceDetail>
+  <MSS.Quality>Comparison quality: {0}</MSS.Quality>
+  <MSS.QualityTip>Compare items at this reference quality. This does not change crafting quality or existing bills. Products without quality ignore this choice.</MSS.QualityTip>
+  <MSS.WorkshopNotes>Workshop change notes</MSS.WorkshopNotes>
+  <MSS.NotApplicable>Not applicable</MSS.NotApplicable>
+  <MSS.WeaponReference>Reference for the first ranged attack with a defined projectile. Excludes accuracy, secondary effects, shooter skill and other attacks. DPS is theoretical.</MSS.WeaponReference>
+  <MSS.StatUnavailable>The statistics system could not calculate this value.</MSS.StatUnavailable>
+  <MSS.All>All</MSS.All>
+  <MSS.Apparel>Armor and apparel</MSS.Apparel>
+  <MSS.Ranged>Ranged weapons</MSS.Ranged>
+  <MSS.Melee>Melee weapons</MSS.Melee>
+  <MSS.Other>Other products and recipes</MSS.Other>
+  <MSS.CategoryButton>Category: {0}</MSS.CategoryButton>
+  <MSS.SortButton>Sort: {0}</MSS.SortButton>
+  <MSS.CompareTip>Compares each recipe's single product at Normal quality. Recipes without a value go last. A higher value does not mean an item is better in every respect.</MSS.CompareTip>
+  <MSS.Descending>Highest to lowest</MSS.Descending>
+  <MSS.Ascending>Lowest to highest</MSS.Ascending>
+  <MSS.DefaultMaterial>Each product's default</MSS.DefaultMaterial>
+  <MSS.MaterialButton>Normal · Material: {0}</MSS.MaterialButton>
+  <MSS.MaterialTip>Material affects only products made from stuff. Products incompatible with a selected material have no value. This does not change bills or ingredient restrictions.</MSS.MaterialTip>
+  <MSS.ResetShort>Clear</MSS.ResetShort>
+  <MSS.ChooseStat>Sort by… Type to search for a statistic</MSS.ChooseStat>
+  <MSS.Connected>Dubs Mint Menus integration connected.</MSS.Connected>
+  <MSS.ConnectedMenu>Integration connected: {0}.</MSS.ConnectedMenu>
+  <MSS.NoMenu>No menu could be connected. Check Player.log and restart RimWorld.</MSS.NoMenu>
+  <MSS.NiceFlatTip>In Nice Bill Tab, sorting or filtering with this selector temporarily uses compact cards instead of the category tree. Reset restores the tree. Comparison values use the material selected here and may differ from the right-hand panel.</MSS.NiceFlatTip>
+  <MSS.GoalsTitle>What are you looking for?</MSS.GoalsTitle>
+  <MSS.ChooseGoals>Characteristics…</MSS.ChooseGoals>
+  <MSS.Characteristics>Characteristics</MSS.Characteristics>
+  <MSS.GoalsHelp>Tick several boxes. Choose More or Less for each, then press Apply.</MSS.GoalsHelp>
+  <MSS.Recommended>Recommended</MSS.Recommended>
+  <MSS.AllStats>Show all</MSS.AllStats>
+  <MSS.More>More ↑</MSS.More>
+  <MSS.Less>Less ↓</MSS.Less>
+  <MSS.CriteriaCount>{0} characteristics</MSS.CriteriaCount>
+  <MSS.SelectedCount>Selected: {0}</MSS.SelectedCount>
+  <MSS.BalanceShort>× opens importance and limits; * marks a filter.</MSS.BalanceShort>
+  <MSS.BalanceTip>With several boxes ticked, the score favors items that balance all goals. It compares visible recipes; it is not damage or an armor percentage. Items missing a chosen value go last.</MSS.BalanceTip>
+  <MSS.ScoreValue>{0} pts</MSS.ScoreValue>
+  <MSS.BestFirst>Best combination first</MSS.BestFirst>
+  <MSS.WorstFirst>Reverse: worst combination first</MSS.WorstFirst>
+  <MSS.Apply>Apply</MSS.Apply>
+  <MSS.ClearSelection>Clear selection</MSS.ClearSelection>
+  <MSS.NoCharacteristics>No comparable characteristics. Try another category or press Show all.</MSS.NoCharacteristics>
+  <MSS.NameHelp>Sort recipes by name. The toolbar arrow reverses the order.</MSS.NameHelp>
+  <MSS.OriginalHelp>Keep the menu's own order without comparing characteristics.</MSS.OriginalHelp>
+  <MSS.Group.attack>Damage and weapons</MSS.Group.attack>
+  <MSS.Group.protection>Protection</MSS.Group.protection>
+  <MSS.Group.climate>Insulation and temperature</MSS.Group.climate>
+  <MSS.Group.practical>Weight, value and crafting</MSS.Group.practical>
+  <MSS.Group.other>Other characteristics</MSS.Group.other>
+  <MSS.ArmorBlunt>Blunt protection</MSS.ArmorBlunt>
+  <MSS.ArmorSharp>Sharp protection</MSS.ArmorSharp>
+  <MSS.ArmorHeat>Heat protection</MSS.ArmorHeat>
+  <MSS.Weight>Weight</MSS.Weight>
+  <MSS.MeleeDamage>Damage per hit (melee)</MSS.MeleeDamage>
+  <MSS.BluntDamage>Blunt damage (melee)</MSS.BluntDamage>
+  <MSS.SharpDamage>Sharp damage (melee)</MSS.SharpDamage>
+  <MSS.MeleeReference>Highest damage from a melee hit of the chosen type, using the reference material with no attacker. Zero means no standard attack of that type. This is not DPS and excludes secondary effects. Custom combat systems may need an adapter.</MSS.MeleeReference>
+  <MSS.CategoryTitle>What do you want to craft?</MSS.CategoryTitle>
+  <MSS.MoreCategories>Show specific categories</MSS.MoreCategories>
+  <MSS.RecipeCount>{0} recipes</MSS.RecipeCount>
+  <MSS.NoMatches>No results for this search.</MSS.NoMatches>
+  <MSS.MaterialTitle>Comparison material</MSS.MaterialTitle>
+  <MSS.StoredOnly>Stored materials only</MSS.StoredOnly>
+  <MSS.StoredCount>{0} in storage</MSS.StoredCount>
+  <MSS.AutoMaterial>Each item's default</MSS.AutoMaterial>
+  <MSS.AutoMaterialHelp>May use materials that are not in storage.</MSS.AutoMaterialHelp>
+  <MSS.NoStoredMaterials>No matching compatible materials in storage. Untick Stored materials only to see all compatible materials.</MSS.NoStoredMaterials>
+  <MSS.NoMap>No colony map is open to check storage.</MSS.NoMap>
+  <MSS.NativeMenu>Normal RimWorld menu</MSS.NativeMenu>
+  <MSS.NativeTitle>Add bill · {0}</MSS.NativeTitle>
+  <MSS.NativeHelp>Choose what to craft. Comparison does not change the bill ingredients.</MSS.NativeHelp>
+  <MSS.SearchRecipes>Search recipes…</MSS.SearchRecipes>
+  <MSS.RecipeUnavailable>This recipe is no longer available at this workbench.</MSS.RecipeUnavailable>
+  <MSS.OpenComparison>Compare recipes…</MSS.OpenComparison>
+  <MSS.OpenComparisonTip>Open MintStatSort to compare recipes and choose goals and material. Apply the result to this menu.</MSS.OpenComparisonTip>
+  <MSS.ComparisonSubtitle>Sort recipes by stats · {0}</MSS.ComparisonSubtitle>
+  <MSS.Restore>Reset</MSS.Restore>
+  <MSS.Close>Close</MSS.Close>
+  <MSS.PreviewHint>Apply saves the comparison. Favourites and saved profiles remain after closing.</MSS.PreviewHint>
+  <MSS.Favorites>★ Favourites</MSS.Favorites>
+  <MSS.FavoritesTip>Show starred recipes only; click again to show all. Combine with search and category. Auxiliary native menu actions remain available.</MSS.FavoritesTip>
+  <MSS.Favorite>Mark this recipe as a favourite. Saved immediately; does not add a bill.</MSS.Favorite>
+  <MSS.Unfavorite>Remove this favourite. Saved immediately; does not add a bill.</MSS.Unfavorite>
+  <MSS.NoFavorites>No favourite recipes match these filters. Disable Favourites to show recipes and mark them with a star.</MSS.NoFavorites>
+  <MSS.ProfilePick>Profile: {0}</MSS.ProfilePick>
+  <MSS.ProfileCustom>Custom</MSS.ProfileCustom>
+  <MSS.ProfilePickTip>Load a saved comparison. Apply remembers it for this workbench type. An asterisk means settings differ from the saved profile; an unavailable category returns to All.</MSS.ProfilePickTip>
+  <MSS.ProfileSave>Save profile</MSS.ProfileSave>
+  <MSS.ProfileNameTip>Save category, criteria, material, quality and favourites filter. The profile remains after closing; Apply saves this workbench comparison.</MSS.ProfileNameTip>
+  <MSS.ProfileOverwrite>Update profile</MSS.ProfileOverwrite>
+  <MSS.ProfileOverwriteTip>A profile with this name already exists. Update replaces its saved settings; comparisons applied to other workbenches are preserved.</MSS.ProfileOverwriteTip>
+  <MSS.ProfileSaved>Profile saved: {0}.</MSS.ProfileSaved>
+  <MSS.ProfileNone>No profiles yet. Configure the comparison, then click Save profile.</MSS.ProfileNone>
+  <MSS.ProfileDelete>Delete profile</MSS.ProfileDelete>
+  <MSS.ProfileDeleteNamed>Delete: {0}</MSS.ProfileDeleteNamed>
+  <MSS.ProfileDeleteTip>Select the profile to delete. Favourites and comparisons already applied to workbenches are preserved.</MSS.ProfileDeleteTip>
+  <MSS.ProfileBench>Apply remembers settings by workbench type.</MSS.ProfileBench>
+  <MSS.ProfileGlobal>General comparison: multiple workbench types selected.</MSS.ProfileGlobal>
+  <MSS.MoreCategoriesShort>More…</MSS.MoreCategoriesShort>
+  <MSS.NativeOption>Original menu action</MSS.NativeOption>
+  <MSS.SingleValueTip>One selected stat shows its actual value. Multiple stats show a balance score.</MSS.SingleValueTip>
+  <MSS.ProductRecipe>Product / Recipe</MSS.ProductRecipe>
+  <MSS.Total>Total</MSS.Total>
+  <MSS.Value>Value</MSS.Value>
+  <MSS.SortBy>Sort by</MSS.SortBy>
+  <MSS.SearchStats>Search stats</MSS.SearchStats>
+  <MSS.DirectionHelp>− prefers lower values; + prefers higher values.</MSS.DirectionHelp>
+  <MSS.CriterionSettings>Set importance and limits for this stat.</MSS.CriterionSettings>
+  <MSS.Importance>Importance: {0} / 5</MSS.Importance>
+  <MSS.ImportanceTip>1 is the default importance. Higher values give this stat more influence when comparing several stats. The score still favors balance.</MSS.ImportanceTip>
+  <MSS.LimitsUnit>Inclusive limits · Unit: {0}</MSS.LimitsUnit>
+  <MSS.Minimum>Minimum</MSS.Minimum>
+  <MSS.Maximum>Maximum</MSS.Maximum>
+  <MSS.BaseValue>unformatted base value</MSS.BaseValue>
+  <MSS.NumericReference>Limit reference: {0} ({1})</MSS.NumericReference>
+  <MSS.LimitsTip>Leave blank for no limit. Uses the selected material and quality. Missing a limited stat hides the recipe. Apply here changes the preview; apply in the comparator too to save it.</MSS.LimitsTip>
+  <MSS.InvalidLimits>Enter finite numbers. Minimum must not exceed maximum. Use a decimal point or comma, without thousands separators.</MSS.InvalidLimits>
+  <MSS.NoLimitMatches>No recipe meets the current filters. Adjust or clear limits with the * button beside each stat, or use Reset.</MSS.NoLimitMatches>
+  <MSS.SearchMaterials>Search materials</MSS.SearchMaterials>
+  <MSS.SelectThenAdd>Select a recipe and click Add bill. Apply comparison only saves the settings.</MSS.SelectThenAdd>
+  <MSS.Weapons>Weapons</MSS.Weapons>
+  <MSS.Armor>Armor</MSS.Armor>
+  <MSS.Clothing>Clothing</MSS.Clothing>
+  <MSS.CE.Sharp>CE: sharp penetration</MSS.CE.Sharp>
+  <MSS.CE.Blunt>CE: blunt penetration</MSS.CE.Blunt>
+  <MSS.CE.Magazine>CE: magazine capacity</MSS.CE.Magazine>
+  <MSS.CE.Reload>CE: reload time</MSS.CE.Reload>
+  <MSS.CE.Reference>CE reference ammunition: {0}. Reference projectile matched to ammunition, or first compatible ammunition. This does not select ammunition in the game.</MSS.CE.Reference>
+  <MSS.CE.ReloadReference>Reference reload time at reload speed 100%; per cartridge for weapons reloaded one at a time.</MSS.CE.ReloadReference>
+  <MSS.CE.DamageReference>Primary damage per projectile; {0} projectile(s) per shot. Excludes explosions and secondary damage.</MSS.CE.DamageReference>
+  <MSS.CE.DpsReference>Theoretical burst-cycle DPS: all projectiles hit, default burst, warmup and cooldown. Excludes reloads, aiming, accuracy, armor, explosions and secondary damage.</MSS.CE.DpsReference>
+  <MSS.CE.Status>Combat Extended: reference ammunition and penetration units enabled.</MSS.CE.Status>
+  <MSS.SaveFilters>Save filters</MSS.SaveFilters>
+  <MSS.AddBill>Add bill</MSS.AddBill>
+  <MSS.SelectRecipe>Select a recipe from the list.</MSS.SelectRecipe>
+  <MSS.AddBillTip>Add the selected recipe to this workbench and save the filters.</MSS.AddBillTip>
+  <MSS.AddBillFailed>Could not add the bill. Check the game log.</MSS.AddBillFailed>
+  <MSS.Preparing>Calculating…</MSS.Preparing>
+  <MSS.PreparingStats>Preparing statistics… You can keep searching or select a recipe.</MSS.PreparingStats>
+  <MSS.PreparingComparison>Calculating comparison: {0} / {1}.</MSS.PreparingComparison>
+  <MSS.PreparingMaterials>Updating materials…</MSS.PreparingMaterials>
+  <MSS.ActiveFilters>Active filters: {0}</MSS.ActiveFilters>
+  <MSS.FilterSearch>Search: {0}</MSS.FilterSearch>
+  <MSS.ClearFilters>Clear filters</MSS.ClearFilters>
+  <MSS.NoActiveFilters>No recipe filters.</MSS.NoActiveFilters>
+  <MSS.RemoveFilterTip>Click to remove only this filter. The comparison remains a preview until applied.</MSS.RemoveFilterTip>
+  <MSS.IngredientsTitle>Recipe ingredients</MSS.IngredientsTitle>
+  <MSS.SelectForIngredients>Select a recipe to view its ingredients</MSS.SelectForIngredients>
+  <MSS.OpenIngredients>Ingredients · {0}</MSS.OpenIngredients>
+  <MSS.IngredientsReference>Estimates chosen recipe executions. Default: one reference per ingredient. Optional substitutes: equivalent reference units, respecting recipe mixing rules. This panel does not change production bill filters.</MSS.IngredientsReference>
+  <MSS.IngredientChoice>Ingredient / Reference</MSS.IngredientChoice>
+  <MSS.Required>Required</MSS.Required>
+  <MSS.StoredAvailable>Stored</MSS.StoredAvailable>
+  <MSS.Shortfall>Missing</MSS.Shortfall>
+  <MSS.NoIngredientReference>No compatible reference</MSS.NoIngredientReference>
+  <MSS.IngredientChoiceTip>Choose a substitute allowed by the recipe to estimate its quantities. This selection affects only this panel.</MSS.IngredientChoiceTip>
+  <MSS.IngredientAvailabilityTip>Compatible stored stock, minus quantities allocated earlier in this preview. With substitutes, figures are equivalent reference units. No checks for pawn access, game reservations or bill restrictions. — means unknown.</MSS.IngredientAvailabilityTip>
+  <MSS.PreparingIngredients>Preparing ingredients…</MSS.PreparingIngredients>
+  <MSS.NoIngredients>This recipe declares no ingredients.</MSS.NoIngredients>
+  <MSS.IngredientsNoMap>No map is available to count stock. Required quantities use the base recipe; — means no estimate.</MSS.IngredientsNoMap>
+  <MSS.IngredientsWholeStacks>This recipe consumes whole stacks. Stored stock is shown, but required and missing quantities need bill context and appear as —.</MSS.IngredientsWholeStacks>
+  <MSS.IngredientsStorageNote>Counts compatible stored stock in stages. Required and missing quantities refer to your selected references; they do not guarantee that a pawn can craft. — means no estimate.</MSS.IngredientsStorageNote>
+  <MSS.RefreshIngredients>Refresh</MSS.RefreshIngredients>
+  <MSS.ApplyComparison>Apply comparison</MSS.ApplyComparison>
+  <MSS.ResetComparison>Reset comparison</MSS.ResetComparison>
+  <MSS.MultiCategoryTip>Select multiple categories to include recipes from any of them. All clears categories only.</MSS.MultiCategoryTip>
+  <MSS.NameOrderTip>Sort by name without clearing statistics, importance or limits.</MSS.NameOrderTip>
+  <MSS.PreferHigher>Higher value ↑</MSS.PreferHigher>
+  <MSS.PreferLower>Lower value ↓</MSS.PreferLower>
+  <MSS.ComparisonCriteria>Comparison criteria · {0} active</MSS.ComparisonCriteria>
+  <MSS.ActiveOnly>Active only</MSS.ActiveOnly>
+  <MSS.AddStatistics>Add stats</MSS.AddStatistics>
+  <MSS.AddStatisticsHint>Click Add stats or search for a statistic to begin. You can combine several.</MSS.AddStatisticsHint>
+  <MSS.ImportanceShort>Importance ×{0}</MSS.ImportanceShort>
+  <MSS.LimitsShort>Limits</MSS.LimitsShort>
+  <MSS.RelativeScoreTip>The score is relative to the compared recipes and selected criteria; it is not an absolute quality rating.</MSS.RelativeScoreTip>
+  <MSS.IngredientDetails>Ingredients</MSS.IngredientDetails>
+  <MSS.IngredientCompact>{0} × {1} (stored: {2}, missing: {3})</MSS.IngredientCompact>
+  <MSS.IngredientMore>+{0} ingredients; see details</MSS.IngredientMore>
+  <MSS.Columns>Columns</MSS.Columns>
+  <MSS.ColumnsTip>Change the order, width and visibility of active statistics. Hiding a column retains its criterion, importance and limits. Apply updates the draft; Close discards this panel’s changes.</MSS.ColumnsTip>
+  <MSS.ColumnWidth>Width: {0} px</MSS.ColumnWidth>
+  <MSS.Pin>Pin</MSS.Pin>
+  <MSS.Unpin>Unpin</MSS.Unpin>
+  <MSS.PinLimit>You can pin up to three recipes. Unpin one before adding another.</MSS.PinLimit>
+  <MSS.PinnedCount>Pinned · {0}</MSS.PinnedCount>
+  <MSS.PinnedComparison>Pinned recipe comparison</MSS.PinnedComparison>
+  <MSS.PinnedTip>Up to three recipes, using the current comparison material and quality. They stay pinned when you change the search or categories. Pins are temporary and are cleared when the main window closes.</MSS.PinnedTip>
+  <MSS.Executions>Executions</MSS.Executions>
+  <MSS.ExecutionsTip>From 1 to 999 executions of the base recipe, not product units. Only affects ingredient estimates and the shortage filter. Does not change a production bill’s quantity.</MSS.ExecutionsTip>
+  <MSS.ExecutionsRange>Enter a whole number from 1 to 999.</MSS.ExecutionsRange>
+  <MSS.StockReady>No estimated shortages</MSS.StockReady>
+  <MSS.StockReadyTip>Checks chosen executions using reference materials by default, or compatible substitutes when enabled. Does not reserve stock across recipes or check access, research, skills or bill restrictions. Unknown estimates are excluded after calculation finishes.</MSS.StockReadyTip>
+  <MSS.StockProgress>Checking ingredients: {0}/{1}. Recipes stay visible during the first pass; the filter applies after it finishes.</MSS.StockProgress>
+  <MSS.NoStockReady>No recipes pass the shortage filter for these references and executions. Check the material or disable No estimated shortages.</MSS.NoStockReady>
+  <MSS.ProfileRename>Rename profile</MSS.ProfileRename>
+  <MSS.ProfileDuplicate>Duplicate profile</MSS.ProfileDuplicate>
+  <MSS.ProfileExport>Export profile</MSS.ProfileExport>
+  <MSS.ProfileImport>Import profile</MSS.ProfileImport>
+  <MSS.ProfileImported>Imported profile</MSS.ProfileImported>
+  <MSS.ProfileNameTaken>Another profile already has this name.</MSS.ProfileNameTaken>
+  <MSS.ProfileImportHelp>Place XML profiles in this folder and choose Import profile again: {0}</MSS.ProfileImportHelp>
+  <MSS.Diagnostics>Diagnostics</MSS.Diagnostics>
+  <MSS.DiagnosticsTip>Integration status, comparison context and active mod list. Copy and Save are explicit actions; this panel does not send the report or publish to Workshop.</MSS.DiagnosticsTip>
+  <MSS.CopyReport>Copy report</MSS.CopyReport>
+  <MSS.SaveReport>Save report</MSS.SaveReport>
+  <MSS.FileSaved>File saved: {0}</MSS.FileSaved>
+  <MSS.FileError>Could not process the file: {0}</MSS.FileError>
+  <MSS.ProfileNameConflict>Another profile already has this name.</MSS.ProfileNameConflict>
+<MSS.ScoreExplanation>Relative score uses a weighted geometric mean, not added points. Each criterion is normalized between the worst and best visible values. A minimum in any varying criterion produces zero; constant criteria do not affect the result. Changing filters can change the reference range.</MSS.ScoreExplanation><MSS.ScorePart>{0}: {1}
+Relative desirability: {2}% · Weight share: {3}% (importance ×{4})</MSS.ScorePart><MSS.ScoreConstant>{0}: constant across comparable recipes; excluded from weighting.</MSS.ScoreConstant><MSS.StarterPrefix>Preset: {0}</MSS.StarterPrefix><MSS.Starter.Protection>Maximum protection</MSS.Starter.Protection><MSS.Starter.Cold>Cold-weather clothing</MSS.Starter.Cold><MSS.Starter.Light>Light equipment</MSS.Starter.Light><MSS.Starter.Range>Long-range weapons</MSS.Starter.Range><MSS.MissingResearch>Research not completed: {0}</MSS.MissingResearch><MSS.RequiredSkill>Required skill: {0} ≥ {1}</MSS.RequiredSkill><MSS.OtherRestriction>Unavailable under the current game/workbench restrictions. See the original recipe label and workbench information.</MSS.OtherRestriction><MSS.RequirementsNote>Skill requirements are informative: no pawn is selected or assigned by this comparison.</MSS.RequirementsNote><MSS.MixSubstitutes>Consider compatible substitutes</MSS.MixSubstitutes><MSS.MixTip>Estimates stored substitutes for each requirement. Only recipes that permit mixing combine types; stuff products keep the reference stuff. Values are equivalent units of the chosen reference, using rounded recipe quantities. Restricted ingredients are allocated first and stacks are not counted twice. This is a conservative estimate, not a crafting guarantee or a reservation across recipes.</MSS.MixTip><MSS.CE.Sustained>CE: sustained theoretical DPS</MSS.CE.Sustained><MSS.CE.SustainedReference>Repeating full magazines with the default burst, warmup, cooldown and full reload at reload speed 100%. Per-cartridge reloads cover all magazine rounds. Accounts for ammunition consumption per shot. Excludes accuracy, aiming, armor, secondary damage and fire-mode changes.</MSS.CE.SustainedReference><MSS.CE.AmmoFallback>Selected ammunition is incompatible with this weapon; using its default reference.</MSS.CE.AmmoFallback><MSS.CE.ChooseAmmo>Comparison ammunition…</MSS.CE.ChooseAmmo><MSS.CE.DefaultAmmo>Default ammunition for each weapon</MSS.CE.DefaultAmmo><MSS.CE.SelectWeapon>Select a compatible weapon recipe to choose its ammunition.</MSS.CE.SelectWeapon><MSS.Shortcuts>Keyboard shortcuts</MSS.Shortcuts><MSS.ShortcutsTip>Ctrl+F: recipe search · Alt+↑/↓: select recipe · Ctrl+P: pin/unpin · Ctrl+Enter: save comparison (does not create a bill) · Ctrl+Tab: switch compact panels · Esc: close.</MSS.ShortcutsTip><MSS.RecipesTab>Recipes</MSS.RecipesTab><MSS.CriteriaTab>Comparison and materials</MSS.CriteriaTab></LanguageData>

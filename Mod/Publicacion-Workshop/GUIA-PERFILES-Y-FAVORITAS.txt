@@ -1,0 +1,26 @@
+MINTSTATSORT 0.6.4 — PERFILES Y FAVORITAS
+
+1. Abre el comparador de recetas de tu mesa.
+2. Configura criterios, categoría, material y calidad. Si quieres, activa Favoritas.
+3. Pulsa Guardar perfil e introduce un nombre. Si ya existe, Actualizar perfil
+   sustituye sus ajustes sin modificar comparaciones aplicadas en otras mesas.
+4. Usa Perfil para cargar una comparación. El asterisco junto al nombre indica
+   que el borrador difiere del perfil. Aplicar/Guardar filtros recuerda el
+   borrador para ese tipo de mesa, incluso si después eliminas el perfil.
+5. Marca estrellas en las recetas. La estrella no selecciona ni añade órdenes;
+   todas las variantes de una receta comparten la marca. Para añadir un proyecto,
+   selecciona la receta y usa el botón original de añadir.
+6. Favoritas junto a Buscar activa/desactiva el filtro. Se combina con la búsqueda
+   y la categoría. Si no ves recetas, desactívalo o cambia a Todas. Las acciones
+   auxiliares del menú normal permanecen disponibles.
+
+Favoritos y perfiles guardados se guardan inmediatamente y sobreviven a Cerrar.
+Cerrar descarta únicamente el borrador de comparación sin aplicar.
+Restablecer en el comparador vuelve a los filtros iniciales sin borrar tus datos.
+Restablecer desde los ajustes del mod también olvida las comparaciones por mesa,
+conservando perfiles y favoritas.
+Las partidas no se modifican para almacenar estas preferencias: se guardan en los
+ajustes del mod para el perfil de RimWorld. Recetas de mods temporalmente ausentes
+conservan su marca para cuando vuelvan a estar disponibles.
+En Dubs, varias mesas del mismo tipo comparten la comparación de ese tipo;
+una selección de tipos distintos utiliza los ajustes generales.

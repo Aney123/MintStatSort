@@ -1,56 +1,59 @@
-# Mint Stat Sort
+# MintStatSort
 
-Ordena las recetas de tus mesas de trabajo por daño, protección y otras estadísticas en **RimWorld 1.6**. Compatible con **Nice Bill Tab** y **Dubs Mint Menus**. Interfaz en español e inglés.
+**Respaldo de desarrollo revisado el 28 de octubre de 2026.** Versión estable
+0.6.10 para RimWorld 1.6; adaptación local experimental para RimWorld 1.7 incluida
+por separado. El número 0.6.10 no acredita por sí solo compatibilidad con 1.7.
 
-**[Descargar Mint Stat Sort 0.3 para Windows](https://github.com/Aney123/MintStatSort/releases/download/v0.3.0/MintStatSort-0.3-SelectorVisual.zip)** · [Todas las versiones](https://github.com/Aney123/MintStatSort/releases) · [Guía completa en español](LEEME.md) · [English](README.en.md)
+Ordena y compara recetas de las mesas de trabajo por estadísticas, sin cambiar
+la prioridad de los proyectos ya creados. Funciona con el menú nativo; Harmony
+es obligatorio y Nice Bill Tab, Dubs Mint Menus y Combat Extended son opcionales.
+Interfaz completa en English, Spanish y SpanishLatin.
 
-## Qué permite hacer
+## Empezar desde GitHub
 
-- Marcar varias características: por ejemplo, **daño cortante y contundente**, o **protección alta y peso bajo**.
-- Buscar el equilibrio entre todas las características seleccionadas, con la misma importancia para cada una.
-- Ver características agrupadas y empezar con las recomendadas para la mesa y la categoría.
-- Elegir categorías con imágenes y cantidades de recetas, evitando nombres repetidos.
-- Elegir un material de referencia con su icono y cantidad almacenada. Por defecto muestra materiales de almacenes y estanterías del mapa actual.
-- Mantener las tarjetas y acciones del menú de fabricación que utilizas.
+1. Clona este repositorio e instala un SDK de .NET 8 (8.0.425 o superior de la rama 8).
+2. Ejecuta `dotnet restore Source/MintStatSort.csproj --locked-mode`.
+3. Ejecuta `dotnet build Source/MintStatSort.csproj -c Release --no-restore`.
+4. La DLL queda en `Mod/Assemblies/MintStatSort.dll`; el juego no es necesario
+   para compilar esta versión, porque las referencias se restauran desde NuGet.
+5. Lee [DEVELOPING.md](DEVELOPING.md) para las pruebas y dependencias.
 
-Ordena las recetas disponibles en la mesa. La cola de órdenes ya añadidas conserva su prioridad.
+## Instalar y usar
 
-## Requisitos
+Para RimWorld 1.6, cierra el juego, extrae o clona el proyecto y ejecuta
+`Instalar-mod.cmd`. También puedes copiar `Mod` a `RimWorld/Mods/MintStatSort`.
+Activa Harmony antes de MintStatSort. Los menús opcionales y CE, si los usas,
+deben ir antes. Evita copias duplicadas activas. El instalador respalda el mod
+anterior y conserva su ID de Workshop.
 
-- RimWorld **1.6**.
-- [Harmony](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077).
-- Al menos uno de estos menús: [Nice Bill Tab](https://steamcommunity.com/sharedfiles/filedetails/?id=3520130671) o [Dubs Mint Menus](https://steamcommunity.com/sharedfiles/filedetails/?id=1446523594).
+Aplicar comparación guarda los ajustes; Añadir proyecto crea la orden nativa.
+Elige Español(Latinoamérica) en las opciones del juego para la traducción latina.
+No instales el Mod estable en RimWorld 1.7 como si fuera una versión validada:
+lee [la adaptación experimental](Experimental/RimWorld17/README.md).
 
-## Instalar en Windows
+## Funciones incluidas
 
-1. Descarga el **ZIP del mod** con el enlace de arriba y extrae su contenido.
-2. Cierra RimWorld y ejecuta **Instalar-mod.cmd**. Si no encuentra el juego, indica la carpeta que contiene `Mods`.
-3. Activa **Harmony**, tu menú y **Mint Stat Sort**, en ese orden, y reinicia RimWorld.
+- Búsqueda, favoritas y selección múltiple de categorías con filtros independientes.
+- Comparación por estadísticas, nombre u orden original; mayor/menor, importancia,
+  límites, calidad y material de referencia. Explicación de puntuaciones relativas.
+- Hasta tres recetas fijadas y columnas con orden, ancho y visibilidad ajustables.
+- Perfiles personales, duplicación, cambio de nombre e importación/exportación XML;
+  cuatro perfiles iniciales: protección, frío, ligereza y alcance.
+- Ingredientes para 1–999 ejecuciones, faltantes estimados y sustitutos opcionales.
+- Lecturas de CE, munición de comparación y DPS sostenido teórico.
+- Ventana compacta, atajos de teclado, diagnóstico local y trabajo gradual en UI.
+- Título, descripción bilingüe, portada, galería y notas preparadas para Workshop.
 
-La DLL está incluida: para jugar no necesitas compilar, instalar Python ni conectarte a internet.
+## Documentación y estado
 
-Para instalar manualmente, copia la carpeta `Mod` del paquete a `RimWorld/Mods/MintStatSort`. Dentro de la carpeta instalada deben quedar `About`, `Assemblies` y `Languages`. El instalador guarda las versiones anteriores en `RimWorld/ModBackups`. Evita mantener dos copias activas del mod.
+- [Instalación](docs/INSTALLATION.md), [compilación y pruebas](DEVELOPING.md).
+- [Estructura y diseño](docs/PROJECT-STRUCTURE.md).
+- [Estado, pendientes y limitaciones](docs/STATUS.md).
+- [Dependencias y contenido de terceros](docs/DEPENDENCIES.md).
+- [Inventario y verificación](docs/BACKUP-REVIEW.md).
+- [Identidad de Workshop](docs/WORKSHOP-IDENTITY.md), [historial](CHANGELOG.md).
+- Guías completas: `Mod/Publicacion-Workshop/GUIA-*.txt`.
 
-## Ejemplo: armas buenas en dos tipos de daño
-
-1. Abre una mesa de armas y elige **Armas cuerpo a cuerpo**.
-2. Pulsa **Características…** y marca **Daño cortante (CaC)** y **Daño contundente (CaC)**.
-3. Deja **Más** en ambas y pulsa **Aplicar**.
-
-Las armas que destaquen en conjunto aparecerán primero. Con varias características, la cifra es una puntuación comparativa de las recetas visibles; puedes consultar sus valores reales en la información. Los valores de referencia utilizan **calidad Normal**.
-
-## Compatibilidad y comprobaciones
-
-Compilado contra referencias de RimWorld **1.6.4871**, con comprobaciones automáticas de ordenación, materiales, firmas de Nice Bill Tab/Dubs Mint Menus y sintaxis del instalador. La reproducción completa de la interfaz dentro del juego no se ha verificado en el entorno de desarrollo.
-
-Nice Bill Tab - Expansion, el parche multijugador, Combat Extended y los sistemas especiales de ataques o almacenamiento pueden necesitar adaptación. Las recetas sin datos comparables aparecen al final. Consulta las limitaciones y el significado de la puntuación en la [guía completa](LEEME.md).
-
-## Informar de un problema
-
-Abre un [reporte en Issues](https://github.com/Aney123/MintStatSort/issues/new?template=bug_report.yml) e indica la versión de RimWorld, el menú que utilizas y los pasos para reproducirlo. Si aparece un error, adjunta `Player.log`.
-
-## Código
-
-El código fuente y las instrucciones para compilar están en [DEVELOPING.md](DEVELOPING.md). La publicación incluye únicamente la DLL de este mod y su código; las dependencias se obtienen por separado.
-
-El código se publica para consulta y descarga. No se ha otorgado una licencia general para modificarlo o redistribuirlo; véase [NOTICE.md](NOTICE.md).
+No se incluyen el juego, mods de terceros, partidas, credenciales ni cachés de
+paquetes. Las referencias y herramientas se restauran o se suministran localmente.
+Consulta [NOTICE.md](NOTICE.md); se mantiene la política de derechos existente.

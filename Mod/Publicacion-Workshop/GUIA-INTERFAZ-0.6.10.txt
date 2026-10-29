@@ -1,0 +1,63 @@
+MintStatSort 0.6.10 — Funciones nuevas
+
+PUNTUACIONES
+La ayuda de la columna Total explica cada valor normalizado y su participación
+en el peso. Es una media geométrica; las contribuciones no son puntos sumables.
+Las referencias cambian con las recetas comparadas. Los valores constantes no
+influyen y las recetas sin algún dato no tienen puntuación combinada.
+
+PERFILES PREDEFINIDOS
+El selector incluye Protección máxima, Ropa para el frío, Equipo ligero y Armas
+de largo alcance. Cargan un borrador; Aplicar comparación guarda. Puedes guardar
+una copia con tu nombre y editarla. No reemplazan los perfiles personales.
+
+REQUISITOS
+La ayuda del nombre de receta indica investigación pendiente y niveles de
+habilidad declarados. Los requisitos de habilidades son informativos: no se
+busca ni asigna un colono. Si el juego impone otra restricción, se mantiene un
+aviso general; no se inventa una causa específica de un mod externo.
+Solo se muestran las recetas suministradas por el menú original; no se habilitan
+recetas bloqueadas ni se fabrican acciones nuevas para ellas.
+
+SUSTITUTOS
+Activa Considerar sustitutos compatibles en … o en Detalles de ingredientes.
+Se guarda con la comparación y en perfiles XML. El resumen y Sin faltantes
+estimados usan el modo aplicado; el panel de detalle conserva su borrador.
+Solo mezcla si la receta lo permite. Para productos hechos de material, conserva
+el material de referencia. Si la receta prohíbe mezclar, estima un solo sustituto.
+Las cantidades son equivalentes de la referencia elegida usando requisitos
+redondeados. Asigna primero los requisitos con menos alternativas y nunca usa
+dos veces la misma pila en la misma receta. No busca todas las combinaciones
+posibles: puede mostrar un faltante aunque otra asignación sea factible.
+No reserva recursos entre recetas ni verifica acceso, habilidades, investigación,
+reservas del juego o restricciones del proyecto. Las pilas completas y otros
+datos desconocidos no pasan el filtro al terminar.
+
+COMBAT EXTENDED
+Selecciona una receta de arma y abre … → Munición de comparación. Las opciones
+proceden del conjunto de municiones de esa arma. Predeterminada recupera la
+referencia de cada arma. Si otra arma no admite la elección, sus estadísticas
+explican el retorno a su referencia. La elección afecta solo a la comparación.
+DPS sostenido teórico es una estadística adicional: ciclo repetido de cargador,
+ráfaga predeterminada, preparación, pausas y recarga completa a velocidad del 100%.
+Las recargas por cartucho incluyen todos los cartuchos. Incluye consumo por
+disparo; los ciclos sin datos válidos quedan desconocidos. No incluye precisión,
+apuntado, armadura, daño secundario, modo de disparo ni condiciones de un colono.
+
+PANTALLAS Y TECLADO
+En ventanas estrechas, Recetas y Comparación y materiales son pestañas. En
+ventanas bajas, el contenido de recetas permite desplazamiento completo.
+Ctrl+F: buscar receta. Alt+↑/↓: seleccionar. Ctrl+P: fijar/quitar receta.
+Ctrl+Enter: guardar comparación; NO crea un proyecto. Ctrl+Tab: cambiar panel
+compacto. Esc: cerrar. Los botones originales siguen disponibles.
+
+ESPAÑOL LATINOAMERICANO
+Elige Español(Latinoamérica) en las opciones de idioma de RimWorld. El mod
+incluye Languages/SpanishLatin/Keyed/MintStatSort.xml con todas sus cadenas.
+Se conservan inglés y español castellano. Los nombres de objetos, recetas y
+estadísticas de otros mods siguen usando las traducciones que esos mods ofrecen.
+
+WORKSHOP
+Inglés primero y español después en la descripción que se envía. Notas de cambios
+breves del mod. Conserva tu PublishedFileId. Instalar no publica; actualiza desde
+RimWorld cuando tú lo decidas. Consulta LEEME-PUBLICACION.txt.

@@ -1,0 +1,4 @@
+Preparada el 20 de octubre de 2026 para Funciona / Supremos1, RimWorld 1.7.4982 rev1280.
+Compilada, no instalada y sin ejecutar RimWorld ni pruebas.
+Mismo packageId que el paquete instalado: sustituirlo únicamente en una futura copia de validación; no activar ambas copias.
+Consultar LEEME.txt y Plan-de-pruebas.txt en la carpeta de entrega.
